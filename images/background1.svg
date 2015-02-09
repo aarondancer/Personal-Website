@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="800px" height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+<g>
+	<polygon fill="#00B04D" points="238.129,550.76 376.527,746.76 65.129,635.039 	"/>
+	<polygon fill="#00743F" points="65.129,635.039 251.263,645.248 238.129,550.76 	"/>
+	<g opacity="0.5">
+		<defs>
+			<polygon id="SVGID_1_" opacity="0.5" points="69.318,655.551 60.198,638.35 272.908,533.746 282.03,550.945 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		
+			<radialGradient id="SVGID_3_" cx="-5113.1426" cy="166032.3125" r="303.7166" gradientTransform="matrix(0.3392 -0.1667 0.0256 0.0484 -2346.6194 -8303.3301)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#666666"/>
+			<stop  offset="0.1923" style="stop-color:#7C7C7C;stop-opacity:0.8077"/>
+			<stop  offset="0.5918" style="stop-color:#B3B3B3;stop-opacity:0.4082"/>
+			<stop  offset="1" style="stop-color:#F2F2F2;stop-opacity:0"/>
+		</radialGradient>
+		<path clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" d="M272.367,534.369c-4.305-8.115-53.881,7.965-110.734,35.924
+			c-56.852,27.953-99.448,57.199-95.143,65.322c4.307,8.117,53.887-7.967,110.737-35.92
+			C234.08,571.736,276.674,542.492,272.367,534.369z"/>
+	</g>
+	<polygon fill="#00B04D" points="59.023,448.84 65.129,635.039 315.47,513.519 315.47,513.519 	"/>
+	<polygon fill="#019946" points="65.129,635.039 117.027,513.768 315.47,513.519 	"/>
+	<g opacity="0.7">
+		<defs>
+			<polygon id="SVGID_4_" opacity="0.7" points="28.978,464.508 35.378,440.652 330.462,514.44 324.061,538.295 			"/>
+		</defs>
+		<clipPath id="SVGID_5_">
+			<use xlink:href="#SVGID_4_"  overflow="visible"/>
+		</clipPath>
+		
+			<radialGradient id="SVGID_6_" cx="-4873.1465" cy="176793.4688" r="387.3993" gradientTransform="matrix(0.3687 0.0922 -0.0142 0.0526 4493.7925 -8371.1445)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#666666"/>
+			<stop  offset="0.1923" style="stop-color:#7C7C7C;stop-opacity:0.8077"/>
+			<stop  offset="0.5918" style="stop-color:#B3B3B3;stop-opacity:0.4082"/>
+			<stop  offset="1" style="stop-color:#F2F2F2;stop-opacity:0"/>
+		</radialGradient>
+		<path clip-path="url(#SVGID_5_)" fill="url(#SVGID_6_)" d="M329.398,514.594c3.02-11.258-58.465-36.373-137.332-56.096
+			c-78.865-19.725-145.25-26.582-148.272-15.318c-3.02,11.26,58.467,36.375,137.33,56.098
+			C259.993,519,326.375,525.857,329.398,514.594z"/>
+	</g>
+	<polygon fill="#D6A20E" points="0,435.121 315.47,513.519 484.168,201.087 	"/>
+	<polygon fill="#FFCF01" points="0,435.121 277.651,403.279 457.78,247.493 	"/>
+	<polygon fill="#F4C305" points="277.651,403.279 315.47,513.519 0,435.121 	"/>
+	<g opacity="0.4">
+		<defs>
+			<polygon id="SVGID_7_" opacity="0.4" points="17.727,467.932 1.273,430.478 464.477,241.849 480.928,279.303 			"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  overflow="visible"/>
+		</clipPath>
+		
+			<radialGradient id="SVGID_9_" cx="-4944.5234" cy="162315.5312" r="639.8672" gradientTransform="matrix(0.3507 -0.1428 0.0219 0.05 -1581.5802 -8487.4883)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#666666"/>
+			<stop  offset="0.1923" style="stop-color:#7C7C7C;stop-opacity:0.8077"/>
+			<stop  offset="0.5918" style="stop-color:#B3B3B3;stop-opacity:0.4082"/>
+			<stop  offset="1" style="stop-color:#F2F2F2;stop-opacity:0"/>
+		</radialGradient>
+		<path clip-path="url(#SVGID_8_)" fill="url(#SVGID_9_)" d="M463.244,243.08c-7.764-17.676-114.418,8.861-238.219,59.272
+			C101.224,352.76,7.158,407.967,14.927,425.652c7.766,17.678,114.422-8.863,238.222-59.273
+			C376.95,315.967,471.012,260.767,463.244,243.08z"/>
+	</g>
+	<polygon fill="#F4C305" points="0,435.121 0,0 800,0 800,107.8 	"/>
+	<polygon fill="#D9A30F" points="0,435.121 275,138 800,107.8 	"/>
+	<polygon fill="#FFCF01" points="276.5,138 0,0 800,107.8 	"/>
+	<polygon fill="#019946" points="251.263,645.248 376.527,746.76 65.129,635.039 	"/>
+</g>
+</svg>
