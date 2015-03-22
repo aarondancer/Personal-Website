@@ -113,6 +113,11 @@ $('.navbar a').click(function() {
 	return false;
 });
 
+function openInNewTab(url) {
+	var win = window.open(url, '_blank');
+	win.focus();
+}
+
 $('.button').makeRipple();
 $('#home').makeRipple();
 $('nav').makeRipple();
