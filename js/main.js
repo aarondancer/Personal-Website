@@ -22,12 +22,8 @@ $.fn.makeRipple = function (options) {
 				posY = $this.offset().top;
 			var w = $this.width(),
 				h = $this.height();
-			var targetX= e.pageX;
-			var targetY= e.pageY;
-			if (!$this.is('section')) {
-				targetX -= posX;
-				targetY -= posY;
-			}
+			var targetX= e.pageX - posX;
+			var targetY= e.pageY - posY;
 			
 			//Fix target position
 			if(!targetX || !targetY){
@@ -38,7 +34,6 @@ $.fn.makeRipple = function (options) {
 			var ratio = scale / 2;    		
 					
 			var $effectElem = $this.children().last();
-			// alert(targetX + " | " + targetY + " | " + ($this === $this.children().last()));
 
 			//Animate Start
 			$effectElem.addClass(settings.effect+"-stop").css({
@@ -77,7 +72,8 @@ var content = $("#about");
 var $root = $('html, body');
 
 $(window).scroll(function(){
-	if ($(window).scrollTop() >= $("#home").height()) {
+	var bottom = $("#homeNav").offset().top + $("#homeNav").outerHeight() + 30;
+	if ($(window).scrollTop() >= bottom) {
 		nav.addClass('sticky');
 		content.addClass('stickyPadding');
 	} else {
@@ -88,17 +84,17 @@ $(window).scroll(function(){
 
 $(window).resize(function(){
 	var title = $("#title");
-	while (title.height() - $(".square").height() > 1) {
+	while (title.height() - $(".square").height() > 5) {
         var currentFontSize = title.css("font-size");
         title.css("font-size", (parseFloat(currentFontSize) - 1) + "px");
     }
-    while (title.height() - $(".square").height() < -1) {
+    while (title.height() - $(".square").height() < -5) {
         var currentFontSize = title.css("font-size");
         title.css("font-size", (parseFloat(currentFontSize) + 1) + "px");
     }
 });
 
-$('.navbar a').click(function() {
+$('.aniscroll a').click(function() {
 	var t = $(this);
 	var href = $.attr(this, 'href');
 	if (!t.hasClass("animating")){
