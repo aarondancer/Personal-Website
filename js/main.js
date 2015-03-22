@@ -113,8 +113,6 @@ $('.aniscroll a').click(function(e) {
     $('body, html').animate({scrollTop: (id == "#home") ? 0 : ($(id).offset().top - 60)});
 });
 
-
-
 function openInNewTab(url) {
 	var win = window.open(url, '_blank');
 	win.focus();

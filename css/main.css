@@ -20,15 +20,12 @@ body {
 .header {
 	text-transform: uppercase;
 	text-align: center;
+	margin-top: 100px;
 	margin-bottom: 100px;
 }
 
-.header:after {
-	border-bottom: 1px solid #000;
-}
-
 section {
-	margin: 100px 0 0 0;
+	padding: 0 0 100px 0;
 }
 
 a {
@@ -51,6 +48,63 @@ a:hover {
 
 button {
 	border:0;
+}
+
+.glyphicon {
+	color: #fff;
+}
+
+.greenButton, .greenButton:visited {
+	padding: 15px 20px;
+	background: #00B388;
+	font-size: 16px;
+	color: #fff;
+	top: 0;
+	float: left;
+}
+
+.greenButton:hover {
+	background: #00866C;
+}
+
+.greenButton2 {
+	height: 100%;
+	position: absolute;
+	padding: 15px 20px;
+	background: #00866C;
+}
+
+.greenButton2:hover {
+	background: #005950;
+}
+
+.goldButton, .goldButton:visited {
+	padding: 15px 20px;
+	background: #F6BE00;
+	font-size: 16px;
+	color: #434A54;
+	top: 0;
+	float: left;
+	font-weight: 600;
+}
+
+.goldButton:hover {
+	background: #D89B00;
+}
+
+.goldButton2 {
+	height: 100%;
+	position: absolute;
+	padding: 15px 20px;
+	background: #D89B00;
+}
+
+.goldButton2:hover {
+	background: #B97800;
+}
+
+.goldButton2 span {
+	color: #434A54;
 }
 
 .ripple{
@@ -92,6 +146,10 @@ button {
 }
 
 /* Helper Classes */
+
+.normargin {
+	margin-right: 0;
+}
 
 .caps{
 	text-transform: uppercase;
@@ -222,35 +280,6 @@ button {
 
 /* About */
 
-.stickyPadding {
-	padding-top: 50px; !important;
-}
-
-.resumeButton, .resumeButton:visited {
-	padding: 15px 20px;
-	background: #00B388;
-	font-size: 16px;
-	color: #fff;
-	top: 0;
-	float: left;
-}
-
-.resumeButton:hover {
-	background: #00866C;
-	color: #fff;
-}
-
-.downloadButton {
-	height: 100%;
-	position: absolute;
-	padding: 15px 20px;
-	background: #00866C;
-}
-
-.downloadButton span {
-	color: #fff;
-}
-
 .me {
 	margin-top: 20px;
 	max-width: 325px;
@@ -259,21 +288,42 @@ button {
 /* Contact */
 
 #contact {
-	margin-bottom: 100px;
+	padding-bottom: 100px;
+	background: #54585A;
+	color: #fff;
+}
+
+#contact h1, #contact h4, .cinfo {
+	color: #fff;
+}
+
+.conForm input, .conForm textarea {
+	border: 0;
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 10px;
+	margin-right: 3%;
+	color: #434A54;
+	width: 100%;
 }
 
 /* Footer */
 
 #footer {
 	padding: 50px;
-	background: #54585A;
+	background: #C8102E;
 	position: relative;
 	color: #fff;
 }
 
 @media screen and (max-width: 960px) {
 	section {
-		margin: 10% 10% 0 10%;
+		padding: 0 10% 10% 10%;
+	}
+
+	.header {
+		margin-top: 10%;
+		margin-bottom: 10%;
 	}
 }
 

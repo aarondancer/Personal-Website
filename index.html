@@ -64,9 +64,9 @@
 							</p>
 							<br>
 							<div class="btn-group">
-								<button type="button" id="viewResume" class="button resumeButton" onclick="openInNewTab('http://bit.ly/AaronDancerResume')">View My Resume</button>
-								<button type="button" id="downloadResume" class="button resumeButton downloadButton" onclick="openInNewTab('https://www.dropbox.com/s/f0ud5i46pi9h5xd/Aaron%20Dancer%20Resume.pdf?dl=1')">
-									<span class="glyphicon glyphicon glyphicon-download-alt"></span>
+								<button type="button" id="viewResume" class="button greenButton" onclick="openInNewTab('http://bit.ly/AaronDancerResume')">View My Resume</button>
+								<button type="button" id="downloadResume" class="button greenButton greenButton2" onclick="openInNewTab('https://www.dropbox.com/s/f0ud5i46pi9h5xd/Aaron%20Dancer%20Resume.pdf?dl=1')">
+									<span class="glyphicon glyphicon-download-alt"></span>
 								</button>
 							</div>
 						</div>
@@ -91,8 +91,8 @@
 							</p>
 							<br>
 							<div class="btn-group">
-								<button type="button" id="viewResume" class="button resumeButton">View My Resume</button>
-								<button type="button" id="downloadResume" class="button resumeButton downloadButton">
+								<button type="button" id="viewResume" class="button greenButton">View My Resume</button>
+								<button type="button" id="downloadResume" class="button greenButton greenButton2">
 									<span class="glyphicon glyphicon glyphicon-download-alt"></span>
 								</button>
 							</div>
@@ -109,8 +109,8 @@
 							</p>
 							<br>
 							<div class="btn-group">
-								<button class="button resumeButton">View My Resume</button>
-								<button class="button resumeButton downloadButton">
+								<button class="button greenButton">View My Resume</button>
+								<button class="button greenButton greenButton2">
 									<span class="glyphicon glyphicon glyphicon-download-alt"></span>
 								</button>
 							</div>
@@ -122,9 +122,47 @@
 				<div class="container">
 					<h1 class="header">Contact</h1>
 					<div class="row">
-						<form>
-							
-						</form>
+						<div class="col-xs-12 col-sm-4 cInfo">
+							<h4>My Contact Info</h4>
+							<br>
+							<span class="glyphicon glyphicon-phone"></span>
+							&nbsp;&nbsp;(832)-302-0083
+							<br>
+							<span class="glyphicon glyphicon-inbox"></span>
+							&nbsp;&nbsp;me@aarondancer.com
+						</div>
+						<div class="col-xs-12 col-sm-8 conForm">
+							<h4>Shoot me a message!</h4>
+							<br>
+							<div class="row">
+								<div class="col-xs-12">
+									<input id="subject" name="subject" placeholder="The subject..." type="text"></input>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6" style="padding-right: 5px;">
+									<input id="name" name="name" placeholder="Your name..." type="text"></input>
+								</div>
+								<div class="col-xs-6" style="padding-left: 5px;">
+									<input id="email" name="email" placeholder="Your email..." type="email"></input>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<textarea cols="" id="comments" name="comments" placeholder="Your message..." rows=""></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="btn-group">
+										<button type="button" class="button goldButton">Submit</button>
+										<button class="button goldButton goldButton2">
+											<span class="glyphicon glyphicon-send"></span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
