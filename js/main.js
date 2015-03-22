@@ -77,7 +77,7 @@ $(window).scroll(function(){
 
 function determineNav() {
 	var navbottom = $("#homeNav").offset().top + $("#homeNav").outerHeight();
-	var abouttop = $("#about").offset().top - parseFloat($("#about").css("margin-top"));
+	var abouttop = $("#about").offset().top - parseFloat($("#about").css("margin-top")) - 60;
 	if ($(window).scrollTop() >= abouttop){
 		if (!nav.hasClass('slideDown')) nav.addClass('slideDown');
 	}

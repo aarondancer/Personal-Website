@@ -218,10 +218,14 @@ button {
 	font-size: 24px;
 	border-top: 5px solid #C8102E;
 	border-bottom: 5px solid #C8102E;
+	background:none !important;
 }
 
 .navbar li > a:hover {
-	background:none;
+	border-top: 5px solid #fff;
+}
+
+.navbar li > a:active {
 	border-top: 5px solid #fff;
 }
 
