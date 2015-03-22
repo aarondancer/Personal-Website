@@ -106,20 +106,14 @@ $(window).resize(function(){
 	}
 });
 
-$('.aniscroll a').click(function() {
-	var t = $(this);
-	var href = $.attr(this, 'href');
-	if (!t.hasClass("animating")){
-		t.addClass("animating");
-		$root.animate({
-			scrollTop: (href == "#home") ? 0 : ($(href).offset().top - 50)
-		}, 500, function () {
-			window.location.hash = href;
-			t.removeClass("animating");
-		});
-	}
-	return false;
+$('.aniscroll a').click(function(e) {
+    var id = $(this).attr('href');
+    if ($(id).length === 0) return;
+    e.preventDefault();    
+    $('body, html').animate({scrollTop: (id == "#home") ? 0 : ($(id).offset().top - 60)});
 });
+
+
 
 function openInNewTab(url) {
 	var win = window.open(url, '_blank');
