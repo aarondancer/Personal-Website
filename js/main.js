@@ -31,7 +31,7 @@ $.fn.makeRipple = function (options) {
 				targetY = e.originalEvent.touches[0].pageY - posY;
 			}
 			
-			var ratio = scale / 2;    		
+			var ratio = scale / 2;				
 					
 			var $effectElem = $this.children().last();
 
@@ -72,31 +72,38 @@ var content = $("#about");
 var $root = $('html, body');
 
 $(window).scroll(function(){
-	var bottom = $("#homeNav").offset().top + $("#homeNav").outerHeight();
-	if ($(window).scrollTop() >= bottom){
+	determineNav();
+});
+
+function determineNav() {
+	var navbottom = $("#homeNav").offset().top + $("#homeNav").outerHeight();
+	var abouttop = $("#about").offset().top - parseFloat($("#about").css("margin-top"));
+	if ($(window).scrollTop() >= abouttop){
 		if (!nav.hasClass('slideDown')) nav.addClass('slideDown');
 	}
 	else if (nav.hasClass('slideDown')) {
-		nav.removeClass('slideDown').addClass('slideUp');
-		nav.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
-		    function(e) {
-		    	nav.removeClass('slideUp');
-	    	}
-	    );
+		nav.removeClass('slideDown');
+		if ($(window).scrollTop() >= navbottom) {
+			nav.addClass('slideUp');
+			nav.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',	 
+				function(e) {
+					nav.removeClass('slideUp');
+				}
+			);
+		}
 	}
-	
-});
+}
 
 $(window).resize(function(){
 	var title = $("#title");
 	while (title.height() - $(".square").height() > 5) {
-        var currentFontSize = title.css("font-size");
-        title.css("font-size", (parseFloat(currentFontSize) - 1) + "px");
-    }
-    while (title.height() - $(".square").height() < -5) {
-        var currentFontSize = title.css("font-size");
-        title.css("font-size", (parseFloat(currentFontSize) + 1) + "px");
-    }
+		var currentFontSize = title.css("font-size");
+		title.css("font-size", (parseFloat(currentFontSize) - 1) + "px");
+	}
+	while (title.height() - $(".square").height() < -5) {
+		var currentFontSize = title.css("font-size");
+		title.css("font-size", (parseFloat(currentFontSize) + 1) + "px");
+	}
 });
 
 $('.aniscroll a').click(function() {
@@ -105,7 +112,7 @@ $('.aniscroll a').click(function() {
 	if (!t.hasClass("animating")){
 		t.addClass("animating");
 		$root.animate({
-			scrollTop: (href == "#home") ? 0 : $(href).offset().top
+			scrollTop: (href == "#home") ? 0 : ($(href).offset().top - 50)
 		}, 500, function () {
 			window.location.hash = href;
 			t.removeClass("animating");
@@ -119,9 +126,14 @@ function openInNewTab(url) {
 	win.focus();
 }
 
-$('.button').makeRipple();
-$('#home').makeRipple();
-$('nav').makeRipple();
-$('#footer').makeRipple();
+$(document).ready(function(){
+	$('.button').makeRipple();
+	$('#home').makeRipple();
+	$('nav').makeRipple();
+	$('#footer').makeRipple();
+	$(".square").addClass("fadeIn");
+	$("#homeNav").addClass("slideFromBelow");
 
-$(window).resize();
+	$(window).resize();
+	determineNav();
+});

@@ -139,31 +139,47 @@ button {
 	z-index: 9999;
 	text-align: center;
 	margin-bottom: 0;
-	height: 50px;
-	line-height: 50px;
-	/*opacity: 0;*/
 	visibility: hidden;
 	position: fixed;
 	top: 0;
-/*	transition: opacity 0.3s;
-	-webkit-transition: opacity 0.3s;*/
 }
 
-.navbar a {
-	padding: 10px;
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  vertical-align: top;
+}
+ 
+.navbar-inner {
+  text-align:center;
+}
+
+.navbar li > a {
 	color: #fff;
 	font-size: 24px;
+	border-top: 5px solid #C8102E;
+	border-bottom: 5px solid #C8102E;
 }
 
-.sticky {
-	opacity: 1;
+.navbar li > a:hover {
+	background:none;
+	border-top: 5px solid #fff;
+}
+
+.navbar-toggle {
+	border: 1px solid #fff;
+}
+
+.icon-bar {
+	background: #fff;
 }
 
 /* Home */
 
 #home {
 	min-height: 325px;
-	height: 100%; /*calc(100% - 50px);*/
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 	background: #C8102E;
@@ -173,7 +189,7 @@ button {
 
 #home h1, #home h2{
 	color: #fff;
-	font-size: 10vmin;
+	font-size: 0;
 	margin: 0;
 }
 
@@ -184,6 +200,7 @@ button {
 	text-align: center;
 	padding: 20px;
 	margin: 0 auto;
+	visibility: hidden;
 }
 
 #title {
@@ -263,11 +280,9 @@ button {
 	#home {
 		height: 100%;
 	}
-
-	.navbar {
-		display: none;
-	}
 }
+
+/* Animations */
 
 .slideDown{
 	animation-name: slideDown;
@@ -319,7 +334,6 @@ button {
 	}
 	100% {
 		transform: translateY(-100%);
-		visibility: hidden;
 	}		
 }
 
@@ -329,7 +343,71 @@ button {
 	}
 	100% {
 		transform: translateY(-100%);
-		visibility: hidden;
 	}	
 }
 
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		/*transform: scale(0);*/
+		opacity: 0.0;		
+	}
+	100% {
+		/*transform: scale(1);*/
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		/*-webkit-transform: scale(0);*/
+		opacity: 0.0;		
+	}
+	100% {
+		/*-webkit-transform: scale(1);*/
+		opacity: 1;	
+	}		
+}
+
+.slideFromBelow{
+	animation-name: slideFromBelow;
+	-webkit-animation-name: slideFromBelow;	
+
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideFromBelow {
+	0% {
+		transform: translateY(1000%);
+	}
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideFromBelow {
+	0% {
+		transform: translateY(1000%);
+	}
+	100% {
+		transform: translateY(0%);
+	}	
+}
