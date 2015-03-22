@@ -233,7 +233,8 @@ button {
 }
 
 .me {
-
+	margin-top: 20px;
+	max-width: 325px;
 }
 
 /* Contact */
