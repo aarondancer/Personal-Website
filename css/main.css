@@ -287,6 +287,13 @@ button {
 .me {
 	margin-top: 20px;
 	max-width: 325px;
+	border-radius: 5000px;
+	border: 5px solid #C8102E;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
 }
 
 /* Contact */
