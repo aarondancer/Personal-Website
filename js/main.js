@@ -72,14 +72,19 @@ var content = $("#about");
 var $root = $('html, body');
 
 $(window).scroll(function(){
-	var bottom = $("#homeNav").offset().top + $("#homeNav").outerHeight() + 30;
-	if ($(window).scrollTop() >= bottom) {
-		nav.addClass('sticky');
-		content.addClass('stickyPadding');
-	} else {
-		nav.removeClass('sticky');
-		content.removeClass('stickyPadding');
+	var bottom = $("#homeNav").offset().top + $("#homeNav").outerHeight();
+	if ($(window).scrollTop() >= bottom){
+		if (!nav.hasClass('slideDown')) nav.addClass('slideDown');
 	}
+	else if (nav.hasClass('slideDown')) {
+		nav.removeClass('slideDown').addClass('slideUp');
+		nav.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+		    function(e) {
+		    	nav.removeClass('slideUp');
+	    	}
+	    );
+	}
+	
 });
 
 $(window).resize(function(){
