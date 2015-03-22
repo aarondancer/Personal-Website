@@ -131,9 +131,7 @@ $(document).ready(function(){
 	$('#home').makeRipple();
 	$('nav').makeRipple();
 	$('#footer').makeRipple();
-	$(".square").addClass("fadeIn");
-	$("#homeNav").addClass("slideFromBelow");
-
+	$("#home div").addClass("fadeIn");
 	$(window).resize();
 	determineNav();
 });

@@ -211,6 +211,7 @@ button {
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 8%;
+	visibility: hidden;
 }
 
 #homeNav a {
@@ -379,35 +380,4 @@ button {
 		/*-webkit-transform: scale(1);*/
 		opacity: 1;	
 	}		
-}
-
-.slideFromBelow{
-	animation-name: slideFromBelow;
-	-webkit-animation-name: slideFromBelow;	
-
-	animation-duration: 0.5s;	
-	-webkit-animation-duration: 0.5s;
-
-	animation-timing-function: ease;	
-	-webkit-animation-timing-function: ease;	
-
-	visibility: visible !important;						
-}
-
-@keyframes slideFromBelow {
-	0% {
-		transform: translateY(1000%);
-	}
-	100% {
-		transform: translateY(0%);
-	}		
-}
-
-@-webkit-keyframes slideFromBelow {
-	0% {
-		transform: translateY(1000%);
-	}
-	100% {
-		transform: translateY(0%);
-	}	
 }
