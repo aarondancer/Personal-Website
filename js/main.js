@@ -15,7 +15,7 @@ $.fn.makeRipple = function (options) {
 		});
 		var supportEvent = ('ontouchstart' in window ) ? 'touchstart':'mousedown';
 		$this.on(supportEvent, function(e) {		//bind touch/click event
-			e.preventDefault();
+			// e.preventDefault();
 			$this.append('<div class="'+settings.effect+'"></div>');	
 			// Fetch click position and size
 			var posX = $this.offset().left,
