@@ -2,18 +2,114 @@
 	margin: 0;
 	padding: 0;
 	color: #434A54;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	outline: none;
 }
 
+/* Components */
+
 body {
-	background: rgba(230, 233, 237, 0.5);
+	overflow-x:hidden;
 }
+
+.header {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+section {
+	margin: 100px 0 0 0;
+}
+
+@media screen and (max-width: 960px) {
+	section {
+		margin: 10% 10% 0 10%;
+	}
+}
+
+a {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 0;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button {
+	border:0;
+}
+
+.ripple{
+	position: absolute;
+	border-radius: 100%;
+	width: 0px;
+	height: 0px;
+	background: rgba(248,248,255, .3);
+	transition-property: border-radius,width,height,background,margin-left,margin-top;
+	transition-duration: 150ms;
+	transition-timing-function: ease-out;
+	-webkit-transition-property: border-radius,width,height,background,margin-left,margin-top;
+	-webkit-transition-duration:150ms;
+	-webkit-transition-timing-function:ease-out;
+	-moz-transition-property: border-radius,width,height,background,margin-left,margin-top;
+	-moz-transition-duration:150ms;
+	-moz-transition-timing-function:ease-out;	
+	-o-transition-property: border-radius,width,height,background,margin-left,margin-top;
+	-o-transition-duration:150ms;
+	-o-transition-timing-function:ease-out;
+	z-index: 50000;	
+	pointer-events: none;	
+}
+
+.ripple-out{
+	background: rgba(248,248,255, .0);
+	transition: background 150ms ease-out opacity 150ms ease-out;
+	-webkit-transition: background 150ms ease-out opacity 150ms ease-out;
+	-moz-transition: background 150ms ease-out;
+	-o-transition: background 150ms ease-out;
+	z-index: 50000;		
+}
+
+.ripple-stop{
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+/* Helper Classes */
 
 .caps{
 	text-transform: uppercase;
 }
 
+.center {
+	text-align: center;
+}
+
 .right {
 	text-align: right;
+}
+
+.noselect {
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .vparent{
@@ -29,55 +125,93 @@ body {
 	color: #DA4453;
 }
 
-#top {
-	height: 100vh;
+/* Menu */
+
+.navbar {
+	background: #C8102E;
+	top: 0;
 	width: 100%;
-	background: linear-gradient(
-		rgba(0, 0, 0, 0),
-		rgba(230, 233, 237, 0.5)
-	), url(../images/background5.svg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	position: fixed;
-	z-index: 5000;
-	pointer-events: none;
+	border-radius: 0;
+	z-index: 9999;
+	text-align: center;
+	margin-bottom: 0;
+	padding: 10px;
 }
+
+.navbar a {
+	padding: 10px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.sticky {
+	top: 0;
+	position: fixed;
+}
+
+/* Home */
 
 #home {
-	height: 100vh;
+	min-height: 325px;
+	height: calc(100vh - 50px);
 	width: 100%;
+	margin: 0 auto;
+	background: #C8102E;
+	padding: 0 10% 0 10%;
+	overflow: hidden;
 	text-align: center;
-	z-index: 9000;
+}
+
+#home h1, #home h2{
+	color: #fff;
+	font-size: 96px;
+	margin: 0;
+}
+
+/* About */
+
+.stickyPadding {
+	margin-top: 50px; !important;
+}
+
+.resumeButton, .resumeButton:visited {
+	padding: 15px 20px;
+	background: #00B388;
+	font-size: 16px;
+	color: #fff;
+	top: 0;
+	float: left;
+}
+
+.resumeButton:hover {
+	background: #00866C;
+	color: #fff;
+}
+
+.downloadButton {
+	height: 100%;
 	position: absolute;
+	padding: 15px 20px;
+	background: #00866C;
 }
 
-.intro h1, .intro h2 {
-	background: rgba(230, 233, 237, 0.5);
+.downloadButton span {
+	color: #fff;
 }
 
-#about {
-	padding: 100px 0;
-	background: rgba(230, 233, 237, 0.5);
-	padding-top: 125vh;
+/* Contact */
+
+#contact {
+	margin-bottom: 10%;
 }
+
+/* Footer */
 
 #footer {
-	padding-top: 100px;
-	width: 100%;
+	padding: 50px;
+	background: #54585A;
 }
 
-#bottom {
-	margin-top: -50%;
-	height: 100%;
-	width: 100%;
-	background: linear-gradient(
-		rgba(0, 0, 0, 0),
-		rgba(230, 233, 237, 0.5)
-	), url(../images/background5u.svg) no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+.copy {
+	color: #fff;
 }

@@ -5,48 +5,67 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="HandheldFriendly" content="True">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
-			<section id="top">
-			</section>
-			<section class="vparent" id="home">
-				<div class="vcontent intro">
-					<h1 class="caps">Hi, I'm Aaron Dancer</h1>
-					<h2>I <span class="heart">&hearts;</span> Code &amp; UI/UX</h2>
+			<section id="home" class="vparent rs-0.25">
+				<div class="container-fluid vcontent noSelect">
+					<h1 class="caps">Hi, I'm<br>Aaron<br>Dancer</h1>
+					<h2 class="caps">I <span class="heart">&hearts;</span> Code<br>&amp; UI/UX</h2>
 				</div>
 			</section>
+			<nav class="navbar caps noSelect">
+				<a href="#home" class="rs-3">Me</a>
+				<a href="#about" class="rs-3">About</a>
+			</nav>
 			<section id="about">
 				<div class="container">
-					<h3>Aaron Dancer</h3>
-					<h4>Code &amp; UI/UX Lover from Houston</h4>
-					<p>
-					  Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast. 
-					</p>
-					<p>
-					  Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
-					</p>
-					<a class="button">View My Resume</a>
-				</div>
-			</section>
-			<section id="footer">
-				<div class="container">
+					<h2 class="header">About</h2>
 					<div class="row">
-						<div class="six columns">
-							Copyright &copy; 2015 Aaron Dancer
+						<div class="col-xs-12 col-sm-8">
+							<h3>Aaron Dancer</h3>
+							<h4>Code &amp; UI/UX Lover from Houston</h4>
+							<p>
+								Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast. 
+							</p>
+							<p>
+								Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
+							</p>
+							<br>
+							<div class="btn-group">
+								<button class="button resumeButton">View My Resume</button>
+								<button class="button resumeButton downloadButton">
+									<span class="glyphicon glyphicon glyphicon-download-alt"></span>
+								</button>
+							</div>
 						</div>
-						<div class="six columns right">
-							Made with <span class="heart">&hearts;</span> in Houston
+						<div class="hidden-xs col-sm-4">
+							
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="bottom">
+			<section id="contact">
+				<div class="container">
+					<div class="row">
+						<form>
+							
+						</form>
+					</div>
+				</div>
 			</section>
+			<div id="footer" class="center">
+				<div class="container">
+					<div class="row copy">
+						Copyright &copy; 2015 Aaron Dancer<br>Made with <span class="heart">&hearts;</span> in Houston
+					</div>
+				</div>
+			</div>
 		</div>
+		<script src="js/main.js"></script>
 	</body>
 </html>
