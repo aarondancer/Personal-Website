@@ -28,7 +28,6 @@ $.fn.makeRipple = function (options) {
 				targetX -= posX;
 				targetY -= posY;
 			}
-			// alert(targetY);
 			
 			//Fix target position
 			if(!targetX || !targetY){
@@ -38,7 +37,8 @@ $.fn.makeRipple = function (options) {
 			
 			var ratio = scale / 2;    		
 					
-			var $effectElem = $this.children(':last');
+			var $effectElem = $this.children().last();
+			// alert(targetX + " | " + targetY + " | " + ($this === $this.children().last()));
 
 			//Animate Start
 			$effectElem.addClass(settings.effect+"-stop").css({
@@ -86,6 +86,18 @@ $(window).scroll(function(){
 	}
 });
 
+$(window).resize(function(){
+	var title = $("#title");
+	while (title.height() - $(".square").height() > 1) {
+        var currentFontSize = title.css("font-size");
+        title.css("font-size", (parseFloat(currentFontSize) - 1) + "px");
+    }
+    while (title.height() - $(".square").height() < -1) {
+        var currentFontSize = title.css("font-size");
+        title.css("font-size", (parseFloat(currentFontSize) + 1) + "px");
+    }
+});
+
 $('.navbar a').click(function() {
 	var t = $(this);
 	var href = $.attr(this, 'href');
@@ -105,3 +117,5 @@ $('.button').makeRipple();
 $('#home').makeRipple();
 $('nav').makeRipple();
 $('#footer').makeRipple();
+
+$(window).resize();

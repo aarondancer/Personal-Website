@@ -1,21 +1,22 @@
 <html>
 	<head>
-		<title>Aaron Dancer - I &hearts; Code &amp; UI/UX</title>
+		<title>Aaron Dancer | I &hearts; Code &amp; UI/UX</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="HandheldFriendly" content="True">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script src="js/jquery-1.11.2.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<section id="home" class="vparent rs-0.25">
-				<div class="container-fluid vcontent noSelect">
-					<h1 class="caps">Hi, I'm<br>Aaron<br>Dancer</h1>
-					<h2 class="caps">I <span class="heart">&hearts;</span> Code<br>&amp; UI/UX</h2>
+				<div class="vcontent noSelect">
+					<div class="square">
+						<h1 id="title" class="caps">Hi, I'm<br><b>Aaron<br>Dancer</b><br>I <span class="heart">&hearts;</span> Code<br>&amp; UI/UX</h1>
+					</div>
 				</div>
 			</section>
 			<nav class="navbar caps noSelect">
@@ -24,9 +25,9 @@
 			</nav>
 			<section id="about">
 				<div class="container">
-					<h2 class="header">About</h2>
+					<h1 class="header">About</h1>
 					<div class="row">
-						<div class="col-xs-12 col-sm-8">
+						<div class="col-xs-12 col-sm-7 col-md-8">
 							<h3>Aaron Dancer</h3>
 							<h4>Code &amp; UI/UX Lover from Houston</h4>
 							<p>
@@ -43,14 +44,56 @@
 								</button>
 							</div>
 						</div>
-						<div class="hidden-xs col-sm-4">
-							
+						<div class="col-xs-12 col-sm-5 col-md-4">
+							<img class="me" src="images/me.png" width="100%"></img>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about">
+				<div class="container">
+					<h1 class="header">About</h1>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<h3>Aaron Dancer</h3>
+							<h4>Code &amp; UI/UX Lover from Houston</h4>
+							<p>
+								Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast. 
+							</p>
+							<p>
+								Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
+							</p>
+							<br>
+							<div class="btn-group">
+								<button class="button resumeButton">View My Resume</button>
+								<button class="button resumeButton downloadButton">
+									<span class="glyphicon glyphicon glyphicon-download-alt"></span>
+								</button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<h3>Aaron Dancer</h3>
+							<h4>Code &amp; UI/UX Lover from Houston</h4>
+							<p>
+								Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast. 
+							</p>
+							<p>
+								Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
+							</p>
+							<br>
+							<div class="btn-group">
+								<button class="button resumeButton">View My Resume</button>
+								<button class="button resumeButton downloadButton">
+									<span class="glyphicon glyphicon glyphicon-download-alt"></span>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section id="contact">
 				<div class="container">
+					<h1 class="header">Contact</h1>
 					<div class="row">
 						<form>
 							
@@ -58,12 +101,8 @@
 					</div>
 				</div>
 			</section>
-			<div id="footer" class="center">
-				<div class="container">
-					<div class="row copy">
-						Copyright &copy; 2015 Aaron Dancer<br>Made with <span class="heart">&hearts;</span> in Houston
-					</div>
-				</div>
+			<div id="footer" class="center noSelect">
+				Copyright &copy; 2015 Aaron Dancer<br>Made with <span class="heart">&hearts;</span> in Houston
 			</div>
 		</div>
 		<script src="js/main.js"></script>

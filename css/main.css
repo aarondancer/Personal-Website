@@ -9,6 +9,10 @@
 
 /* Components */
 
+b {
+	color: #fff;
+}
+
 body {
 	overflow-x:hidden;
 }
@@ -16,16 +20,15 @@ body {
 .header {
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 100px;
+}
+
+.header:after {
+	border-bottom: 1px solid #000;
 }
 
 section {
 	margin: 100px 0 0 0;
-}
-
-@media screen and (max-width: 960px) {
-	section {
-		margin: 10% 10% 0 10%;
-	}
 }
 
 a {
@@ -102,7 +105,7 @@ button {
 	text-align: right;
 }
 
-.noselect {
+.noselect, noSelect {
 	cursor: default;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -132,16 +135,18 @@ button {
 	top: 0;
 	width: 100%;
 	border-radius: 0;
+	border: 0;
 	z-index: 9999;
 	text-align: center;
 	margin-bottom: 0;
-	padding: 10px;
+	height: 50px;
+	line-height: 50px;
 }
 
 .navbar a {
 	padding: 10px;
 	color: #fff;
-	font-size: 24px;
+	font-size: 36px;
 }
 
 .sticky {
@@ -153,25 +158,37 @@ button {
 
 #home {
 	min-height: 325px;
-	height: calc(100vh - 50px);
+	height: calc(100% - 50px);
 	width: 100%;
 	margin: 0 auto;
 	background: #C8102E;
 	padding: 0 10% 0 10%;
 	overflow: hidden;
-	text-align: center;
 }
 
 #home h1, #home h2{
 	color: #fff;
-	font-size: 96px;
+	font-size: 10vmin;
 	margin: 0;
+}
+
+.square {
+	border: 5px solid #fff;
+	width: 60vmin;
+	height: 60vmin;
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+#title {
+	line-height: 1;
 }
 
 /* About */
 
 .stickyPadding {
-	margin-top: 50px; !important;
+	padding-top: 50px; !important;
 }
 
 .resumeButton, .resumeButton:visited {
@@ -199,10 +216,14 @@ button {
 	color: #fff;
 }
 
+.me {
+
+}
+
 /* Contact */
 
 #contact {
-	margin-bottom: 10%;
+	margin-bottom: 100px;
 }
 
 /* Footer */
@@ -210,8 +231,22 @@ button {
 #footer {
 	padding: 50px;
 	background: #54585A;
+	position: relative;
+	color: #fff;
 }
 
-.copy {
-	color: #fff;
+@media screen and (max-width: 960px) {
+	section {
+		margin: 10% 10% 0 10%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#home {
+		height: 100%;
+	}
+
+	.navbar {
+		display: none;
+	}
 }
