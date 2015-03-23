@@ -7,6 +7,16 @@
 	outline: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+	color: #434A54;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* Components */
 
 b {
@@ -51,6 +61,11 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+.split.button {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
 }
 
 .split.button span {
