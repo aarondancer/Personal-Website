@@ -259,6 +259,24 @@ i {
 	/*font-weight: 300;*/
 }
 
+#homeNav a:after{
+	content:"";
+	margin-left: 25px;
+	width: 1px;
+	height: 100%;
+	background: #fff;
+	border-right: 1px solid #fff;
+}
+
+#homeNav a:last-child:after{
+	content:"";
+	margin: 0;
+	width: 0;
+	height: 0;
+	background: none;
+	border-right: 0;
+}
+
 #homeNav {
 	margin: 0 auto;
 	text-align: center;
