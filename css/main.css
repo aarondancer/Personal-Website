@@ -17,21 +17,18 @@ body {
 	overflow-x:hidden;
 }
 
-.header {
+.header, .paddedheader {
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0 0 50px 0;
 	margin: 0 !important;
-	font-weight: 300;
-	font-size: 2.5rem;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*font-weight: 350;*/
+	font-size: 2.25rem;
 }
 
 .paddedheader {
-	text-transform: uppercase;
-	text-align: center;
 	padding: 50px 0;
-	margin: 0 !important;
-	font-weight: 600;
 }
 
 section {
