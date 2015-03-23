@@ -53,8 +53,8 @@ a:hover {
 	text-decoration: none;
 }
 
-button {
-	border:0;
+.split.button span {
+	border: 0;
 }
 
 .split.button span > i {
