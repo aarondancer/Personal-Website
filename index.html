@@ -1,177 +1,147 @@
 <html>
-	<head>
-		<title>Aaron Dancer | I &hearts; Code &amp; UI/UX</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="HandheldFriendly" content="True">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script src="js/jquery-1.11.2.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</head>
-	<body>
-		<div id="loading">
-		</div>
-		<div class="wrapper">
-			<section id="home" class="vparent rs-0.25">
-				<div class="vcontent noSelect">
-					<div class="square">
-						<h1 id="title" class="caps">Hi, I'm<br><b>Aaron<br>Dancer</b><br>I <span class="heart">&hearts;</span> Code<br>&amp; UI/UX</h1>
-					</div>
-					<div id="homeNav" class="aniscroll caps noSelect">
-						<a href="#home">Me</a>
-						<a href="#about">About</a>
-						<a href="#experience">Experience</a>
-						<a href="#contact">Contact</a>
-					</div>
-				</div>
-			</section>
-			<nav class="navbar aniscroll">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- <h3>AARON DANCER</h3> -->
-					</div>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse caps noSelect rs-3" id="menu-collapse-1">
-						<ul class="nav navbar-nav">
-							<li><a href="#home">Me</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#experience">Experience</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-			<section id="about">
-				<div class="container">
-					<h1 class="header">About</h1>
-					<div class="row">
-						<div class="col-xs-12 col-sm-7 col-md-8">
-							<h3>Aaron Dancer</h3>
-							<h4>Code &amp; UI/UX Lover from Houston</h4>
-							<p>
-								Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast. 
-							</p>
-							<p>
-								Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
-							</p>
-							<br>
-							<div class="btn-group">
-								<button type="button" id="viewResume" class="button greenButton" onclick="openInNewTab('http://bit.ly/AaronDancerResume')">View My Resume</button>
-								<button type="button" id="downloadResume" class="button greenButton greenButton2" onclick="openInNewTab('https://www.dropbox.com/s/f0ud5i46pi9h5xd/Aaron%20Dancer%20Resume.pdf?dl=1')">
-									<span class="glyphicon glyphicon-download-alt"></span>
-								</button>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-5 col-md-4 center">
-							<img class="me" src="images/me.jpg" width="100%"></img>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="experience">
-				<div class="container">
-					<h1 class="header">Experience</h1>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<h3>Aaron Dancer</h3>
-							<h4>Code &amp; UI/UX Lover from Houston</h4>
-							<p>
-								Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast. 
-							</p>
-							<p>
-								Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
-							</p>
-							<br>
-							<div class="btn-group">
-								<button type="button" id="viewResume" class="button greenButton">View My Resume</button>
-								<button type="button" id="downloadResume" class="button greenButton greenButton2">
-									<span class="glyphicon glyphicon glyphicon-download-alt"></span>
-								</button>
-							</div>
+<head>
+    <title>Aaron Dancer | I &hearts; Code &amp; UI/UX</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="HandheldFriendly" content="True">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation.magellan.js"></script>
+</head>
 
-						</div>
-						<div class="col-xs-12 col-sm-6">
-							<h3>Aaron Dancer</h3>
-							<h4>Code &amp; UI/UX Lover from Houston</h4>
-							<p>
-								Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast. 
-							</p>
-							<p>
-								Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
-							</p>
-							<br>
-							<div class="btn-group">
-								<button class="button greenButton">View My Resume</button>
-								<button class="button greenButton greenButton2">
-									<span class="glyphicon glyphicon glyphicon-download-alt"></span>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
+<body>
+    <div class="wrapper">
+        <section id="home" class="vparent rs-0.25">
+            <div class="vcontent noSelect">
+                <div class="square">
+                    <h1 id="title" class="caps">Hi, I'm<br><b>Aaron<br>Dancer</b><br>I <span class="heart">&hearts;</span> Code<br>&amp; UI/UX</h1>
+                </div>
+                <div id="homeNav" class="aniscroll caps noSelect">
+                    <a href="#home">Hi</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </section>
+        <nav class="top-bar navbar" data-topbar role="navigation">
+			<ul class="title-area">
+				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="noselect aniscroll">
+					<li><a href="#home">Hi</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</section>
-			<section id="contact">
-				<div class="container">
-					<h1 class="header">Contact</h1>
-					<div class="row">
-						<div class="col-xs-12 col-sm-4 cInfo">
-							<h4>My Contact Info</h4>
-							<br>
-							<span class="glyphicon glyphicon-phone"></span>
-							&nbsp;&nbsp;(832)-302-0083
-							<br>
-							<span class="glyphicon glyphicon-inbox"></span>
-							&nbsp;&nbsp;me@aarondancer.com
-						</div>
-						<div class="col-xs-12 col-sm-8 conForm">
-							<h4>Shoot me a message!</h4>
-							<br>
-							<div class="row">
-								<div class="col-xs-12">
-									<input id="subject" name="subject" placeholder="The subject..." type="text"></input>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-6" style="padding-right: 5px;">
-									<input id="name" name="name" placeholder="Your name..." type="text"></input>
-								</div>
-								<div class="col-xs-6" style="padding-left: 5px;">
-									<input id="email" name="email" placeholder="Your email..." type="email"></input>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<textarea cols="" id="comments" name="comments" placeholder="Your message..." rows=""></textarea>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="btn-group">
-										<button type="button" class="button goldButton">Submit</button>
-										<button class="button goldButton goldButton2">
-											<span class="glyphicon glyphicon-send"></span>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div id="footer" class="center noSelect">
-				Copyright &copy; 2015 Aaron Dancer<br>Made with <span class="heart">&hearts;</span> in Houston
-			</div>
-		</div>
-		<script src="js/main.js"></script>
-	</body>
+		</nav>
+        <section id="about">
+            <h1 class="paddedHeader">About</h1>
+            <div class="row">
+                <div class="small-12 medium-8 columns">
+                    <h3>Aaron Dancer</h3>
+                    <h4>Code &amp; UI/UX Lover from Houston</h4>
+                    <p>
+                        Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast.
+                    </p>
+                    <p>
+                        Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
+                    </p>
+                    <a href="http://bit.ly/AaronDancerResumePlain" class="button split no-pip greenButton">
+						View My Resume<span><i class="fa fa-cloud-download"></i></span>
+					</a>
+                    <a href="https://www.dropbox.com/s/kqzxj9tnz1dq22f/Aaron%20Dancer%20Resume%20Plain.pdf?dl=0" class="button split no-pip greenButton">
+						View Plain Version<span ><i class="fa fa-cloud-download"></i></span>
+					</a>
+                </div>
+                <div class="hide-for-small-only medium-4 columns">
+                    <img class="me" src="images/me.jpg" width="100%"></img>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h1 class="header">Experience</h1>
+            <div class="row">
+                <div class="small-12 medium-6 columns">
+                    <h3>Aaron Dancer</h3>
+                    <h4>Code &amp; UI/UX Lover from Houston</h4>
+                    <p>
+                        Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast.
+                    </p>
+                    <p>
+                        Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
+                    </p>
+                    <br>
+                </div>
+                <div class="small-12 medium-6 columns">
+                    <h3>Aaron Dancer</h3>
+                    <h4>Code &amp; UI/UX Lover from Houston</h4>
+                    <p>
+                        Programmer and overall geek at heart. I love technology, both hardware and software. I'm a programming, computer hardware, and hackathon enthusiast.
+                    </p>
+                    <p>
+                        Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="paddedHeader">Contact</h1>
+            <div class="row">
+                <div class="small-12 medium-4 columns cInfo">
+                    <h4>My Contact Info</h4>
+                    <br>
+                    <i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;(832)-302-0083
+                    <br>
+                    <i class="fa fa-envelope"></i> &nbsp;&nbsp;me@aarondancer.com
+                    <br><br>
+                </div>
+                <div class="small-12 medium-8 columns conForm">
+                    <h4>Shoot me a message!</h4>
+                    <br>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <input id="subject" name="subject" placeholder="The subject..." type="text"></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 medium-6 columns">
+                            <input id="name" name="name" placeholder="Your name..." type="text"></input>
+                        </div>
+                        <div class="small-12 medium-6 columns">
+                            <input id="email" name="email" placeholder="Your email..." type="email"></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <textarea cols="" id="comments" name="comments" placeholder="Your message..." rows=""></textarea>
+                        </div>
+                        <div class="small-12 columns">
+                            <a class="button split no-pip goldButton">
+								Send<span ><i class="fa fa-paper-plane"></i></span>
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="center noSelect">
+            Copyright &copy; 2015 Aaron Dancer
+            <br>Made with <span class="heart">&hearts;</span> in Houston
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
