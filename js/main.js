@@ -127,3 +127,7 @@ $(document).ready(function(){
 	$(window).resize();
 	determineNav();
 });
+
+$("#menubutton").click(function(){
+	$("#menucontent").toggleClass("collapsed");
+});

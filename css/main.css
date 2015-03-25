@@ -261,11 +261,9 @@ i {
 
 #homeNav a:after{
 	content:"";
-	margin-left: 25px;
+	margin-left: 30px;
 	width: 1px;
 	height: 100%;
-	background: #fff;
-	border-right: 1px solid #fff;
 }
 
 #homeNav a:last-child:after{
@@ -273,8 +271,6 @@ i {
 	margin: 0;
 	width: 0;
 	height: 0;
-	background: none;
-	border-right: 0;
 }
 
 #homeNav {
@@ -288,6 +284,10 @@ i {
 	padding: 10px;
 	color: #fff;
 	font-size: 36px;
+}
+
+.top-bar .toggle-topbar.menu-icon {
+	margin-top: 6px;
 }
 
 /* About */
@@ -333,6 +333,25 @@ i {
 	background: #C8102E;
 	position: relative;
 	color: #fff;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 40em) {
+	.top-bar-section ul li {
+		display: table-cell;
+		background: none;
+	}
+	.top-bar-section ul li {
+		width: 100%;
+	}
+	.collapsed {
+		visibility: hidden;
+	}
+
+	.expanded {
+		visibility: visible;
+	}
 }
 
 /* Animations */
