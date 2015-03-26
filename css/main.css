@@ -340,11 +340,11 @@ i {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding: 30px;
+	padding: 2.5em;
 }
 
 .resumelinks a {
-	margin: 5px;
+	margin: 0.5rem;
 }
 
 /*.professions {
