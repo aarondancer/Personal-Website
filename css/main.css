@@ -413,6 +413,10 @@ i {
 	.expanded {
 		visibility: visible;
 	}
+
+	.me {
+		max-height: 200px;
+	}
 }
 
 /* Animations */
