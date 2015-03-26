@@ -36,10 +36,10 @@ body {
 .header, .paddedheader {
 	text-transform: uppercase;
 	text-align: center;
-	padding: 1.5em 0;
+	padding: 1.5rem 0;
 	margin: 0 !important;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 2.25em;
+	font-size: 2.25rem;
 }
 
 a {
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .split.button span > i {
-	margin-left: -0.5em !important;
+	margin-left: -0.5rem !important;
 }
 
 i {
@@ -217,7 +217,7 @@ i {
 
 .top-bar-section ul li a {
 	color: #fff !important;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	background:none !important;
 	text-transform: uppercase;
 	font-family: "Open Sans", "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
@@ -243,11 +243,11 @@ i {
 }
 
 .square {
-	border: 0.4em solid #fff;
+	border: 0.4rem solid #fff;
 	width: 60vmin;
 	height: 60vmin;
 	text-align: center;
-	padding: 1em;
+	padding: 1rem;
 	margin: 0 auto;
 	visibility: hidden;
 }
@@ -264,9 +264,9 @@ i {
 }
 
 #homeNav a {
-	padding: 0.5em;
+	padding: 0.5rem;
 	color: #fff;
-	font-size: 2.25em;
+	font-size: 2.25rem;
 }
 
 .top-bar .toggle-topbar.menu-icon {
@@ -308,14 +308,14 @@ i {
 
 .info .infocontent{
 	margin: 0;
-	padding: 1.5em 1em;
+	padding: 1.5rem 1rem;
 	width: 100%;
-	max-width: 40em;
+	max-width: 40rem;
 }
 
 .contactinfo {
 	background: #333;
-	padding: 1.5em 1em;
+	padding: 1.5rem 1rem;
 }
 
 .contactinfo table, td, tr, tbody {
@@ -323,7 +323,7 @@ i {
 	border: 0;
 	margin: 0;
 	color: #fff !important;
-	padding: 0.2em 1.5em 0 0.2em !important;
+	padding: 0.2rem 1.5rem 0 0.2rem !important;
 }
 
 .block-resume {
@@ -354,7 +354,7 @@ i {
 .profwrapper .columns{
 	text-align: center;
 	border-left: 1px solid #ebebeb;
-	padding: 1em;
+	padding: 1rem;
 }
 
 .profwrapper .columns:last-child{
@@ -368,7 +368,7 @@ i {
 /* Contact */
 
 #contact {
-	padding-bottom: 3em;
+	padding-bottom: 3rem;
 	background: #54585A;
 	color: #fff;
 }
@@ -379,7 +379,7 @@ i {
 
 .conForm input, .conForm textarea {
 	border: 0;
-	padding: 1em;
+	padding: 1rem;
 	background: #fff;
 	margin-bottom: 0.9375rem;
 	margin-right: 3%;
@@ -390,7 +390,7 @@ i {
 /* Footer */
 
 #footer {
-	padding: 3em;
+	padding: 3rem;
 	background: #C8102E;
 	position: relative;
 	color: #fff;
