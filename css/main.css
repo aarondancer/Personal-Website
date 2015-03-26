@@ -257,7 +257,7 @@ i {
 
 #homeNav a:after{
 	content:"";
-	margin-left: 0.75em;
+	margin: 0 0.35em;
 }
 
 #homeNav a:last-child:after{
