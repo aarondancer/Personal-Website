@@ -104,6 +104,22 @@ $(window).resize(function(){
 		var currentFontSize = title.css("font-size");
 		title.css("font-size", (parseFloat(currentFontSize) + 1) + "px");
 	}
+	$("[data-match-height]").each(function() {
+		var parentRow = $(this),
+			childrenCols = $(this).find("[data-height-watch]");
+		childrenCols.css('max-height', '');
+		var childHeights = childrenCols.map(function(){ return $(this).height(); }).get(),
+			tallestChild = Math.min.apply(Math, childHeights);
+		childrenCols.css('max-height', tallestChild);
+	});
+	$("[data-match-width").each(function() {
+		var parentRow = $(this),
+			childrenCols = $(this).find("[data-width-watch]");
+		childrenCols.css('min-width', '');
+		var childWidths = childrenCols.map(function(){ return $(this).width(); }).get(),
+			widestChild = Math.max.apply(Math, childWidths) + 120;
+		childrenCols.css('min-width', widestChild);
+	});
 });
 
 $('.aniscroll a').click(function(e) {
