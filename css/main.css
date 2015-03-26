@@ -116,8 +116,8 @@ i {
 .ripple{
 	position: absolute;
 	border-radius: 100%;
-	width: 0px;
-	height: 0px;
+	width: 0;
+	height: 0;
 	background: rgba(248,248,255, .3);
 	transition-property: border-radius,width,height,background,margin-left,margin-top;
 	transition-duration: 150ms;
@@ -216,7 +216,7 @@ i {
 
 .top-bar-section ul li a {
 	color: #fff !important;
-	font-size: 24px;
+	font-size: 1.5em;
 	background:none !important;
 	text-transform: uppercase;
 	font-family: "Open Sans", "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
@@ -242,25 +242,22 @@ i {
 }
 
 .square {
-	border: 5px solid #fff;
+	border: 0.4em solid #fff;
 	width: 60vmin;
 	height: 60vmin;
 	text-align: center;
-	padding: 20px;
+	padding: 2em;
 	margin: 0 auto;
 	visibility: hidden;
 }
 
 #title {
 	line-height: 1;
-	/*font-weight: 300;*/
 }
 
 #homeNav a:after{
 	content:"";
-	margin-left: 30px;
-	width: 1px;
-	height: 100%;
+	margin-left: 0.75em;
 }
 
 #homeNav a:last-child:after{
@@ -278,9 +275,9 @@ i {
 }
 
 #homeNav a {
-	padding: 10px;
+	padding: 0.25em;
 	color: #fff;
-	font-size: 36px;
+	font-size: 2.25em;
 }
 
 .top-bar .toggle-topbar.menu-icon {
@@ -361,6 +358,24 @@ i {
 	margin: 5px;
 }
 
+/*.professions {
+	border-bottom: 1px solid #ebebeb;
+}*/
+
+.profwrapper .columns{
+	text-align: center;
+	border-left: 1px solid #ebebeb;
+	padding: 1em;
+}
+
+.profwrapper .columns:last-child{
+	border-right: 1px solid #ebebeb;
+}
+
+.professions .columns i {
+	color: #434A54;
+}
+
 /* Contact */
 
 #contact {
@@ -375,7 +390,7 @@ i {
 
 .conForm input, .conForm textarea {
 	border: 0;
-	padding: 20px;
+	padding: 1em;
 	background: #fff;
 	margin-bottom: 0.9375rem;
 	margin-right: 3%;
