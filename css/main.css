@@ -354,7 +354,7 @@ i {
 .profwrapper .columns{
 	text-align: center;
 	border-left: 1px solid #ebebeb;
-	padding: 1rem;
+	padding: 2rem;
 }
 
 .profwrapper .columns:last-child{
@@ -363,6 +363,32 @@ i {
 
 .professions .columns i {
 	color: #434A54;
+}
+
+/* Experience */
+
+.leftcol {
+	text-align: right;
+	padding: 2rem 3rem;
+}
+
+.rightcol:before {
+	position: absolute;
+	top: 2.5rem; right: 0; bottom: 0; left: -1.5rem;
+	content: ' ';
+	height: 3rem;
+	width: 3rem;
+	background: #F6BE00;
+}
+
+.rightcol {
+	border-left: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding: 2rem 3rem;
+}
+
+.leftcol ul, .rightcol ul{
+	margin-bottom: 0;
 }
 
 /* Contact */

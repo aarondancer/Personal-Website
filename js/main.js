@@ -105,6 +105,14 @@ $(window).resize(function(){
 		title.css("font-size", (parseFloat(currentFontSize) + 1) + "px");
 	}
 	$(".me").css("height", $(".info").height());
+	$("[data-match-height").each(function(){
+		var parentRow = $(this),
+			childrenCols = $(this).find("[data-height-watch]");
+		childrenCols.css('min-height', '');
+		var childHeights = childrenCols.map(function(){ return $(this).height(); }).get(),
+			tallestChild = Math.max.apply(Math, childHeights);
+		childrenCols.css('min-height', tallestChild);
+	});
 	$("[data-match-width").each(function() {
 		var parentRow = $(this),
 			childrenCols = $(this).find("[data-width-watch]");
