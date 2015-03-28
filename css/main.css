@@ -384,6 +384,7 @@ i {
 }
 
 .leftcol {
+	border-left: 1px solid #ebebeb;
 	border-bottom: 1px solid #ebebeb;
 	text-align: right;
 	padding: 1.5rem 2.25rem;
@@ -393,11 +394,16 @@ i {
 .rightcol {
 	border-left: 1px solid #ebebeb;
 	border-bottom: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
 	padding: 1.5rem 2.25rem;
 }
 
-.leftcol ul, .rightcol ul{
+.rightcol ul {
 	margin-bottom: 0;
+}
+
+.leftcol h5 span{
+	display: none;
 }
 
 /* Contact */
@@ -445,7 +451,7 @@ i {
 
 /* Responsive */
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 40rem) {
 	.menubutton {
 		display: table;
 	}
@@ -464,6 +470,19 @@ i {
 		max-height: 200px;
 	}
 
+	.leftcol {
+		min-height: 0 !important;
+		text-align: left;
+	}
+
+	.leftcol h5 br{
+		display: none;
+	}
+
+	.leftcol h5 span {
+		display: inline-block;
+	}
+
 	.contactinfo, .resumelinks {
 		text-align: center;
 	}
@@ -475,7 +494,7 @@ i {
 }
 
 
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 64rem) {
 	.resumelinks {
 		padding: 0;
 		margin: 0;
