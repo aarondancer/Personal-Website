@@ -410,12 +410,16 @@ i {
 
 .conForm input, .conForm textarea {
 	border: 0;
-	padding: 1rem;
+	padding: 2rem 1.5rem;
 	background: #fff;
 	margin-bottom: 0.9375rem;
 	margin-right: 3%;
 	color: #434A54;
 	width: 100%;
+}
+
+.conForm textarea {
+	padding-top: 1.1rem;
 }
 
 /* Footer */
