@@ -386,14 +386,14 @@ i {
 .leftcol {
 	border-bottom: 1px solid #ebebeb;
 	text-align: right;
-	padding: 2rem 3rem;
+	padding: 1.5rem 2.25rem;
 	background: #fafafa;
 }
 
 .rightcol {
 	border-left: 1px solid #ebebeb;
 	border-bottom: 1px solid #ebebeb;
-	padding: 2rem 3rem;
+	padding: 1.5rem 2.25rem;
 }
 
 .leftcol ul, .rightcol ul{
