@@ -375,18 +375,15 @@ i {
 
 /* Experience */
 
-.leftcol {
-	text-align: right;
-	padding: 2rem 3rem;
+#experience h3 {
+	font-weight: 600;
 }
 
-.rightcol:before {
-	position: absolute;
-	top: 2.5rem; right: 0; bottom: 0; left: -1.5rem;
-	content: ' ';
-	height: 3rem;
-	width: 3rem;
-	background: #F6BE00;
+.leftcol {
+	border-bottom: 1px solid #ebebeb;
+	text-align: right;
+	padding: 2rem 3rem;
+	background: #fafafa;
 }
 
 .rightcol {
