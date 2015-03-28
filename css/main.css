@@ -218,6 +218,10 @@ i {
 	top: 0;
 }
 
+#menucontent {
+	height: auto;
+}
+
 #menucontent ul {
 	display: table;
 	margin: 0 auto;
@@ -454,10 +458,6 @@ i {
 
 	.collapsed {
 		display: none !important;
-	}
-
-	.expanded {
-		display: block;
 	}
 
 	.me {

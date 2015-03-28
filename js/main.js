@@ -149,7 +149,3 @@ $(document).ready(function(){
 function togglemenu(){
 	$("#menucontent").toggleClass("collapsed");
 }
-
-function collapsemenu(){
-	$("#menucontent").removeClass("collapsed");
-}
