@@ -412,7 +412,7 @@ i {
 	border: 0;
 	padding: 2rem 1.5rem;
 	background: #fff;
-	margin-bottom: 0.9375rem;
+	margin-bottom: 1.25rem;
 	margin-right: 3%;
 	color: #434A54;
 	width: 100%;
@@ -420,6 +420,14 @@ i {
 
 .conForm textarea {
 	padding-top: 1.1rem;
+}
+
+.coll {
+	padding-right: .625rem;
+}
+
+.colr {
+	padding-left: .625rem;
 }
 
 /* Footer */
@@ -458,6 +466,11 @@ i {
 
 	.contactinfo, .resumelinks {
 		text-align: center;
+	}
+
+	.coll, .colr {
+		padding-left: 0.9375rem;
+		padding-right: 0.9375rem;
 	}
 }
 
