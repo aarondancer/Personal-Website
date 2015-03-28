@@ -29,13 +29,11 @@
                 </div>
             </div>
         </section>
-        <nav class="top-bar navbar" data-topbar role="navigation">
-			<ul class="title-area">
-				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				<li class="toggle-topbar menu-icon"><a id="menubutton"><span></span></a></li>
-			</ul>
-
-			<section class="top-bar-section collapsed" id="menucontent">
+        <nav class="navbar">
+        	<a class="menubutton" onclick="togglemenu()">
+        		<i class="fa fa-bars"></i>
+        	</a>
+			<section class="collapsed menucontent" id="menucontent">
 				<ul class="noselect aniscroll">
 					<li><a href="#home">Hi</a></li>
 					<li><a href="#about">About</a></li>
@@ -47,24 +45,6 @@
         <section id="about">
             <div class="block-title">
             	<h1 class="paddedHeader">About</h1>
-            	<!-- <div class="row professions">
-	            	<div class="small-12 medium-8 small-centered columns profwrapper">
-		            	<div class="row">
-				            <div class="small-4 columns">
-				            	<i class="fa fa-3x fa-code"></i>
-				            	<br>Developer
-				            </div>
-				            <div class="small-4 columns">
-				            	<i class="fa fa-3x fa-laptop"></i>
-				            	<br>Designer
-				            </div>
-				            <div class="small-4 columns">
-				            	<i class="fa fa-3x fa-users"></i>
-				            	<br>Organizer
-				            </div>
-				        </div>
-			        </div>
-	            </div> -->
             </div>
             <div class="row aboutcontent">
             	<div class="small-12 medium-6 columns me">
@@ -80,8 +60,8 @@
 	                        Outside of technology I have a passion for language, culture, and music. I'm interested in many cultures and am learning many languages. In my free time I play Piano, Guitar, and Violin.
 	                    </p>
                     </div>
-                    <div class="row contactinfo">
-	                    <div class="small-12 columns">
+                    <div class="row infoandresume">
+	                    <div class="small-12 large-6 columns contactinfo">
 		            		<table>
 								<tbody>
 									<tr>
@@ -117,18 +97,13 @@
 								</tbody>
 							</table>
 		            	</div>
+		            	<div class="small-12 large-6 columns resumelinks">
+			            	<a href="http://bit.ly/AaronDancerResume" class="button split no-pip greenButton">
+							My Resume<span><i class="fa fa-cloud-download"></i></span>
+							</a>
+		            	</div>
                     </div>
                 </div>
-            </div>
-            <div class="block-resume row">
-	            <div class="small-12 columns resumelinks" data-match-width>
-	            	<a data-width-watch href="http://bit.ly/AaronDancerResume" class="button split no-pip greenButton">
-					Creative Resume<span><i class="fa fa-cloud-download"></i></span>
-					</a>
-					<a data-width-watch href="http://bit.ly/AaronDancerResumePlain" class="button split no-pip greenButton">
-						Formal Resume<span ><i class="fa fa-cloud-download"></i></span>
-					</a>
-	            </div>
             </div>
         </section>
         <section id="experience">

@@ -128,6 +128,7 @@ $('.aniscroll a').click(function(e) {
     if ($(id).length === 0) return;
     e.preventDefault();    
     $('body, html').animate({scrollTop: (id == "#home") ? 0 : ($(id).offset().top - 60)});
+    collapsemenu();
 });
 
 function openInNewTab(url) {
@@ -145,6 +146,10 @@ $(document).ready(function(){
 	determineNav();
 });
 
-$("#menubutton").click(function(){
+function togglemenu(){
 	$("#menucontent").toggleClass("collapsed");
-});
+}
+
+function collapsemenu(){
+	$("#menucontent").removeClass("collapsed");
+}
