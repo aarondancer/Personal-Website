@@ -297,12 +297,17 @@ i {
 
 /* About */
 
+#about {
+	background: #eee;
+}
+
 #about p {
 	margin: 0;
 }
 
 .aboutcontent {
-	max-width: 100%;
+	max-width: 120rem;
+	background: #fff;
 }
 
 .me:before, .resumelinks:before {
@@ -326,13 +331,20 @@ i {
 	-o-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
 	position: relative;
+	max-width: 60rem;
+	text-align: right;
 }
 
 .info .infocontent{
 	margin: 0;
 	padding: 1.5rem 1rem;
 	width: 100%;
-	max-width: 40rem;
+	max-width: 60rem;
+}
+
+.infocontent p{
+	color: #333;
+	font-size: 0.85rem;
 }
 
 .infoandresume {
@@ -353,6 +365,10 @@ i {
 	border: 0;
 	margin: 0;
 	padding: 0;
+}
+
+.infoandresumecontainer {
+	max-width: 60rem;
 }
 
 .contactinfo {
