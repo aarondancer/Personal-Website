@@ -497,7 +497,7 @@ i {
 	}
 
 	#information {
-		padding: 1rem;
+		padding: 1.5rem;
 		width: auto;
 		overflow-x: hidden;
 		overflow-y: hidden;
@@ -513,7 +513,7 @@ i {
 	}
 
 	#information .infoblock h2 {
-		margin-top: 3rem;
+		margin-top: 1.5rem;
 	}
 
 	#experience h2 {
