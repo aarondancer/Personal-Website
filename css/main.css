@@ -416,8 +416,31 @@ i {
 	top:0;
 }
 
+#information .infoblock .content {
+	background: #f6f6f6;
+}
+
+#information .infoblock .content h5 {
+	margin-top: 0;
+}
+
 #information .infoblock ul {
 	margin: 0;
+}
+
+#information .infoblock ul > li > div > ul {
+	margin-left: 1.25em;
+}
+
+.accordion-navigation a{
+	border-bottom: 1px #e3e3e3 solid;
+	font-weight: 400;
+}
+
+.accordion-navigation a:after {
+	content: '▼';
+	float: right;
+	font-size: 0.75em;
 }
 
 /* Experience */
