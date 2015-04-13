@@ -386,6 +386,7 @@ i {
 
 #information {
 	padding: 2rem;
+	padding-bottom: 2.5rem;
 	width: auto;
 	overflow-x: scroll;
 	overflow-y: hidden;
