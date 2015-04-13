@@ -409,7 +409,7 @@ i {
 }
 
 #information .infoblock {
-	display: inline-block;
+	display: inline-table;
 	margin: 0 1em;
 	width: 400px;
 	max-width: 400px;
