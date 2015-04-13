@@ -516,6 +516,10 @@ i {
 		margin-top: 3rem;
 	}
 
+	#experience h2 {
+		margin-top: 0 !important;
+	}
+
 	.spacing {
 		display: none;
 	}
