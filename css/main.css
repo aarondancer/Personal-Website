@@ -393,10 +393,38 @@ i {
 	max-width: 20rem;
 }
 
+/* Information */
+
+#information {
+	padding: 2rem;
+	width: auto;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	display: block;
+}
+
+#information .accordion {
+	white-space: normal;
+}
+
+#information .infoblock {
+	display: inline-block;
+	margin: 0 1em;
+	width: 400px;
+	max-width: 400px;
+	top:0;
+}
+
+#information .infoblock ul {
+	margin: 0;
+}
+
 /* Experience */
 
-#experience h3 {
-	font-weight: 600;
+#details {
+	background: #aaa;
+	padding: 4rem;
 }
 
 .leftcol {

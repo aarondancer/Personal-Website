@@ -144,6 +144,7 @@ $(document).ready(function(){
 	$("#home div").addClass("fadeIn");
 	$(window).resize();
 	determineNav();
+	$(document).foundation();
 });
 
 function togglemenu(){
