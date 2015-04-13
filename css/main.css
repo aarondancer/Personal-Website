@@ -27,21 +27,6 @@ body {
 	overflow-x:hidden;
 }
 
-.block-title {
-	background: #f5f5f5;
-	border-top: 1px solid #ebebeb;
-	border-bottom: 1px solid #ebebeb;
-}
-
-.header, .paddedheader {
-	text-transform: uppercase;
-	text-align: center;
-	padding: 4rem 0;
-	margin: 0 !important;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 2.25rem;
-}
-
 a {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
