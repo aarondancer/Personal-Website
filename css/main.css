@@ -30,7 +30,7 @@ body {
 .header {
 	text-transform: uppercase;
 	text-align: center;
-	padding: 4rem 0;
+	padding: 2.25rem 0;
 	margin: 0 !important;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 2.25rem;
@@ -436,7 +436,7 @@ i {
 /* Contact */
 
 #contact {
-	padding-bottom: 3rem;
+	padding-bottom: 2rem;
 	background: #54585A;
 	color: #fff;
 }
