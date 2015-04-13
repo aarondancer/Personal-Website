@@ -410,7 +410,7 @@ i {
 
 #information .infoblock {
 	display: inline-table;
-	margin: 0 1em;
+	margin: 0 1rem;
 	width: 400px;
 	max-width: 400px;
 	top:0;
@@ -429,7 +429,7 @@ i {
 }
 
 #information .infoblock ul > li > div > ul {
-	margin-left: 1.25em;
+	margin-left: 1.25rem;
 }
 
 .accordion-navigation a{
@@ -440,37 +440,7 @@ i {
 .accordion-navigation a:after {
 	content: '▼';
 	float: right;
-	font-size: 0.75em;
-}
-
-/* Experience */
-
-#details {
-	background: #aaa;
-	padding: 4rem;
-}
-
-.leftcol {
-	border-left: 1px solid #ebebeb;
-	border-bottom: 1px solid #ebebeb;
-	text-align: right;
-	padding: 1.5rem 2.25rem;
-	background: #fafafa;
-}
-
-.rightcol {
-	border-left: 1px solid #ebebeb;
-	border-bottom: 1px solid #ebebeb;
-	border-right: 1px solid #ebebeb;
-	padding: 1.5rem 2.25rem;
-}
-
-.rightcol ul {
-	margin-bottom: 0;
-}
-
-.leftcol h5 span{
-	display: none;
+	font-size: 0.75rem;
 }
 
 /* Contact */
@@ -537,17 +507,27 @@ i {
 		max-height: 200px;
 	}
 
-	.leftcol {
-		min-height: 0 !important;
-		text-align: left;
+	#information {
+		padding: 1rem;
+		width: auto;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		white-space: normal;
+		display: block;
 	}
 
-	.leftcol h5 br{
+	#information .infoblock {
+		display: block;
+		margin: 0;
+		width: 100%;
+	}
+
+	#information .infoblock h2 {
+		margin-top: 3rem;
+	}
+
+	.spacing {
 		display: none;
-	}
-
-	.leftcol h5 span {
-		display: inline-block;
 	}
 
 	.contactinfo, .resumelinks {
