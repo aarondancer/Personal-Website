@@ -155,10 +155,6 @@ i {
 	text-align: center;
 }
 
-.right {
-	text-align: right;
-}
-
 .noselect, noSelect {
 	cursor: default;
 	-webkit-touch-callout: none;
@@ -179,7 +175,6 @@ i {
 }
 
 .heart {
-	/*color: #DA4453;*/
 	color: #fff;
 }
 
