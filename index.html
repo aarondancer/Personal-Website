@@ -24,7 +24,7 @@
                 <div id="homeNav" class="aniscroll caps noSelect">
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#contactForm">Contact</a>
                 </div>
             </div>
         </section>
@@ -37,7 +37,7 @@
                     <li><a href="#home">Hi</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contactForm">Contact</a></li>
                 </ul>
             </section>
         </nav>
@@ -100,7 +100,7 @@
                                 <a href="http://bit.ly/AaronDancerResume" class="button split no-pip greenButton">
                                 My Resume<span><i class="fa fa-cloud-download"></i></span>
                                 </a>
-                                <a class="button split no-pip goldButton">
+                                <a class="button split no-pip goldButton" data-reveal-id="contactForm">
                                 Send a message<span><i class="fa fa-paper-plane"></i></span>
                                 </a>
                             </div>
@@ -330,36 +330,35 @@
                 </ul>
             </div>
         </section>
-        <!-- <section id="contact">
-            <h1 class="header">Contact</h1>
-            <div class="row">
-                <div class="small-11 small-centered columns conForm">
-                    <div class="row">
-                        <div class="small-12 columns">
-                            <input id="subject" name="subject" placeholder="Subject" type="text"></input>
-                        </div>
+        <div id="contactForm" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Send me a message!</h2>
+            <div class="small-11 small-centered columns conForm">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <input id="subject" name="subject" placeholder="Subject" type="text"></input>
                     </div>
-                    <div class="row">
-                        <div class="small-12 medium-6 columns coll">
-                            <input id="name" name="name" placeholder="Name" type="text"></input>
-                        </div>
-                        <div class="small-12 medium-6 columns colr">
-                            <input id="email" name="email" placeholder="Your email address" type="email"></input>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-6 columns coll">
+                        <input id="name" name="name" placeholder="Name" type="text"></input>
                     </div>
-                    <div class="row">
-                        <div class="small-12 columns">
-                            <textarea cols="" id="comments" name="comments" placeholder="Your message" rows=""></textarea>
-                        </div>
-                        <div class="small-12 columns">
-                            <a class="button split no-pip goldButton">
-                                Send<span ><i class="fa fa-paper-plane"></i></span>
-                            </a>
-                        </div>
+                    <div class="small-12 medium-6 columns colr">
+                        <input id="email" name="email" placeholder="Your email address" type="email"></input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <textarea cols="" id="comments" name="comments" placeholder="Your message" rows=""></textarea>
+                    </div>
+                    <div class="small-12 columns">
+                        <a class="button split no-pip goldButton">
+                            Send<span ><i class="fa fa-paper-plane"></i></span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section> -->
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
         <section id="footer" class="center noSelect">
             Copyright &copy; 2015 Aaron Dancer
             <br>Made with <span class="heart">&hearts;</span> in Houston
