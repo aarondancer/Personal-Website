@@ -147,6 +147,10 @@ i {
 
 /* Helper Classes */
 
+.hidden {
+	display: none !important;
+}
+
 .caps {
 	text-transform: uppercase;
 }
