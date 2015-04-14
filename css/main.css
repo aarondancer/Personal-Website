@@ -433,6 +433,10 @@ i {
 	font-size: 0.75rem;
 }
 
+#awards .accordion-navigation a:after {
+	content: '';
+}
+
 /* Contact */
 
 #contact {
