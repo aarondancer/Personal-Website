@@ -103,9 +103,9 @@ i {
 	background: #B97800;
 }
 
-.goldButton, .goldButton span > i {
+/*.goldButton, .goldButton span > i {
 	color: #434A54;
-}
+}*/
 
 .ripple{
 	position: absolute;
@@ -307,7 +307,7 @@ i {
 	padding: 0;
 }
 
-.me:before, .resumelinks:before {
+.me:before, .aboutButton:before {
 	position: absolute;
 	top: 0; right: 0; bottom: 0; left: 0;
 	background-color: inherit;
@@ -376,14 +376,13 @@ i {
 	margin-left: 1.5rem;
 }
 
-.resumelinks {
-	padding: 1.5rem 0 0 0;
-	margin: 1.5rem 1.5rem 1.5rem -1.5rem;
+.aboutButton {
+	margin: 0 1.5rem 1.5rem -1.5rem;
 	text-align: center;
 }
 
-.resumelinks a{
-	margin: 0;
+.aboutButton a{
+	margin: 1.5rem 0 0 0;
 	width: 100%;
 	max-width: 20rem;
 }
@@ -554,7 +553,7 @@ i {
 		display: none;
 	}
 
-	.contactinfo, .resumelinks {
+	.contactinfo, .aboutButton {
 		text-align: center;
 	}
 
@@ -566,12 +565,12 @@ i {
 
 
 @media only screen and (max-width: 64rem) {
-	.resumelinks {
+	.aboutButton {
 		padding: 0;
 		margin: 0;
 	}
 
-	.resumelinks a{
+	.aboutButton a{
 		margin: 0;
 		max-width: none;
 	}
