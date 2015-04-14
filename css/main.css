@@ -291,7 +291,7 @@ i {
 /* About */
 
 #about {
-	background: #eee;
+	background: #fff;
 }
 
 #about p {
@@ -299,8 +299,12 @@ i {
 }
 
 .aboutcontent {
-	max-width: 120rem;
+	max-width: 140rem;
 	background: #fff;
+}
+
+.aboutcontent .columns:first-child {
+	padding: 0;
 }
 
 .me:before, .resumelinks:before {
@@ -312,7 +316,7 @@ i {
 
 .me {
 	background: url(../images/me.jpg) no-repeat center center;
-	background-color: rgba(150,150,150,.5);
+	/*background-color: rgba(150,150,150,.5);*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -323,9 +327,7 @@ i {
 	-moz-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
-	position: relative;
-	max-width: 60rem;
-	text-align: right;
+	opacity: 0.75;
 }
 
 .info .infocontent{
@@ -392,10 +394,12 @@ i {
 	padding: 2rem;
 	padding-bottom: 2.5rem;
 	width: auto;
+	max-width: 140rem;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
 	display: block;
+	margin: 0 auto;
 }
 
 #information .accordion {
@@ -491,6 +495,17 @@ i {
 }
 
 /* Responsive */
+
+@media only screen and (min-width: 140rem) {
+	#information {
+		border: 1px solid #eee;
+		border-bottom: none;
+	}
+	.aboutcontent {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+}
 
 @media only screen and (max-width: 40rem) {
 	.menubutton {
