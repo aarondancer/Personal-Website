@@ -150,3 +150,11 @@ $(document).ready(function(){
 function togglemenu(){
 	$("#menucontent").toggleClass("collapsed");
 }
+
+document.onmousedown = window.onmousedown = function (e) {
+    if(e.which == 2) {
+        e = e || window.event;
+        if (e.preventDefault) e.preventDefault();
+        e.returnValue = false;
+    }
+};

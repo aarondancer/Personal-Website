@@ -147,6 +147,10 @@ i {
 
 /* Helper Classes */
 
+.nopadleft {
+	padding-left: 0 !important;
+}
+
 .hidden {
 	display: none !important;
 }
@@ -462,10 +466,19 @@ i {
 	color: #fff;
 }
 
+.reveal-modal-bg, .reveal-modal {
+	z-index: 999999;
+}
+
+.reveal-modal {
+	top: 3.5rem !important;
+	position: fixed;
+}
+
 .conForm input, .conForm textarea {
 	border: 0;
 	padding: 2rem 1.5rem;
-	background: #fff;
+	background: #f8f8f8;
 	margin-bottom: 1.25rem;
 	margin-right: 3%;
 	color: #434A54;
