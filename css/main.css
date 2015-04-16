@@ -405,14 +405,10 @@ i {
 	margin: 0 auto;
 }
 
-#information .accordion {
-	white-space: normal;
-}
-
 #information .infoblock {
 	display: inline-table;
 	margin: 0 1rem;
-	width: 26rem;
+	width: 30rem;
 	top:0;
 }
 
@@ -432,9 +428,14 @@ i {
 	margin-left: 1.25rem;
 }
 
+#information .accordion {
+	white-space: normal;
+}
+
 .accordion-navigation a{
 	border-bottom: 1px #e3e3e3 solid;
 	font-weight: 400;
+	max-height: 57px;
 }
 
 .accordion-navigation a:after {
@@ -447,6 +448,11 @@ i {
 
 .accordion-navigation a i{
 	color: #333;
+}
+
+.accordion-navigation a img{
+	max-height: 25px;
+	margin-right: 0.5rem;
 }
 
 #awards .accordion-navigation a:after,
