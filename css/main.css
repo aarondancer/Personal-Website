@@ -24,7 +24,7 @@ b {
 }
 
 body {
-	opacity: 1;
+	opacity: 1 !important;
 	overflow-x:hidden;
 }
 
