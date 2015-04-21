@@ -24,8 +24,11 @@ b {
 }
 
 body {
-	opacity: 1 !important;
 	overflow-x:hidden;
+}
+
+.wrapper {
+	opacity: 1 !important;
 }
 
 .header {
