@@ -1,0 +1,12 @@
+{
+	"name" : "Personal-Website",
+	"description" : "Aaron Dancer's Personal Website",
+	"homepage" : "http://aarondancer.com",
+	"author": "Aaron Dancer", 
+	"dependencies" : 
+		{
+			"sendgrid" : "^1.7.0"
+		},
+	"repository" : {"type": "git", "url": "git://github.com/aaron7pm/aaron7pm.github.io.git"}, 
+	"version" : "3.0.0"
+}
