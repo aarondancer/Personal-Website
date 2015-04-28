@@ -1,4 +1,3 @@
-var $ = jQuery();
 $.fn.makeRipple = function (options) {
 	var settings = $.extend({
 		effect : "ripple",
