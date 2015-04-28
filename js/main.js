@@ -149,7 +149,7 @@ $(document).ready(function(){
 	$('#home').makeRipple();
 	$('nav').makeRipple();
 	$('#footer').makeRipple();
-	$("#home div").addClass("fadeIn");
+	// $("#home div").addClass("fadeIn");
 	$(window).resize();
 	determineNav();
 	$(document).foundation();

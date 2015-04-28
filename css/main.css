@@ -272,7 +272,7 @@ i {
 	text-align: center;
 	padding: 1rem;
 	margin: 0 auto;
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
 #title {
@@ -283,7 +283,7 @@ i {
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 8%;
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
 #homeNav a {
