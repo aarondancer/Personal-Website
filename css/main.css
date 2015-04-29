@@ -514,18 +514,17 @@ tbody {
 .conForm input,
 .conForm textarea {
     border: 0.2rem solid #fff;
-    padding: 1.5rem 0.75rem;
     background: transparent;
     margin-bottom: 1rem;
     color: #fff;
     width: 100%;
     font-size: 1.5rem;
+    height: 3rem;
 }
 
 .conForm input:focus,
 .conForm textarea:focus {
     border: 0.2rem solid #fff;
-    padding: 1.5rem 0.75rem;
     background: transparent;
     margin-bottom: 1rem;
     color: #fff;
@@ -534,22 +533,22 @@ tbody {
 }
 
 .conform textarea, .conform textarea:focus {
-	padding: 0.5rem 0.75rem;
+	height: auto;
 }
 
 ::-webkit-input-placeholder {    
     color: #fff;
 }
 
-:-moz-placeholder {    
+/*:-moz-placeholder {    
     color: #fff;
     opacity: 1;
-}
+}*/
 
-::-moz-placeholder {    
+/*::-moz-placeholder {    
     color: #fff;
     opacity: 1;
-}
+}*/
 
 :-ms-input-placeholder {    
     color: #fff;
