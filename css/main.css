@@ -499,7 +499,7 @@ tbody {
     background: #C8102E;
     border: 0.4rem solid #fff;
     opacity: 0.98;
-    width: 80%;
+    width: 100%;
     max-width: 800px;
     transform: translateY(-50%);
     display: none;
@@ -619,10 +619,9 @@ tbody {
     .aboutButton {
         text-align: center;
     }
-    .coll,
-    .colr {
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
+
+    .contactForm {
+    	padding: 1rem 0rem !important;
     }
 }
 
