@@ -107,9 +107,6 @@ i {
 .goldButton span:hover {
     background: #B97800;
 }
-/*.goldButton, .goldButton span > i {
-	color: #434A54;
-}*/
 
 .ripple {
     position: absolute;
@@ -540,15 +537,15 @@ tbody {
     color: #fff;
 }
 
-/*:-moz-placeholder {    
+:-moz-placeholder {    
     color: #fff;
     opacity: 1;
-}*/
+}
 
-/*::-moz-placeholder {    
+::-moz-placeholder {    
     color: #fff;
     opacity: 1;
-}*/
+}
 
 :-ms-input-placeholder {    
     color: #fff;
