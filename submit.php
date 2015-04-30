@@ -1,7 +1,7 @@
 <?php
 $url = 'https://api.sendgrid.com/';
-$user = $_ENV["sguser"];
-$pass = $_ENV["sgpass"];
+$user = $_ENV["SGUSER"];
+$pass = $_ENV["SGPASS"];
 $params = array(
 	'api_user' => $user,
 	'api_key' => $pass,
