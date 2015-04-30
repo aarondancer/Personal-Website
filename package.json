@@ -4,10 +4,7 @@
     "homepage": "http://aarondancer.com",
     "author": "Aaron Dancer",
     "dependencies": {
-        "dotenv": "^1.1.0",
-        "nodemailer": "^1.3.4",
-        "smtpapi": "^1.1.0",
-        "sendgrid": "^1.7.0"
+
     },
     "repository": {
         "type": "git",
