@@ -43,3 +43,7 @@ curl_close($session);
 
 print_r($response);
 ?>
+<h3><?php echo $params ?></h3>
+<h3><?php echo $params ?></h3>
+<h3><?php echo $params ?></h3>
+<h3><?php echo $response ?></h3>
