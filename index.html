@@ -365,7 +365,7 @@
             </div>
         </section>
         <div id="contactForm" class="contactForm redbg" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-            <div class="small-12 small-centered columns conForm">
+            <form class="small-12 small-centered columns conForm" action="submit.php" method="POST">
                 <div class="row">
                     <div class="small-12 columns">
                         <h2 id="modalTitle" class="text-center">SEND A MESSAGE</h2>
@@ -381,15 +381,15 @@
                         <input id="email" name="email" placeholder="Your email address" type="email"></input>
                     </div>
                     <div class="small-12 columns">
-                        <textarea cols="" id="comments" name="comments" placeholder="Your message" rows=""></textarea>
+                        <textarea cols="" id="message" name="message" placeholder="Your message" rows=""></textarea>
                     </div>
                     <div class="small-12 columns">
-                        <a class="button split no-pip goldButton">
+                        <button type="submit" class="button split no-pip goldButton">
                             Send<span ><i class="fa fa-paper-plane"></i></span>
-                        </a>
+                        </button>
                     </div>
                 </div>
-            </div>
+            </form>>
         </div>
         <section id="footer" class="center noSelect rs-3">
             Copyright &copy; 2015 Aaron Dancer

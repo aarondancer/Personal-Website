@@ -1,12 +1,21 @@
 {
-	"name" : "Personal-Website",
-	"description" : "Aaron Dancer's Personal Website",
-	"homepage" : "http://aarondancer.com",
-	"author": "Aaron Dancer", 
-	"dependencies" : 
-		{
-			"sendgrid" : "^1.7.0"
-		},
-	"repository" : {"type": "git", "url": "git://github.com/aaron7pm/aaron7pm.github.io.git"}, 
-	"version" : "3.0.0"
+    "name": "Personal-Website",
+    "description": "Aaron Dancer's Personal Website",
+    "homepage": "http://aarondancer.com",
+    "author": "Aaron Dancer",
+    "dependencies": {
+        "dotenv": "^1.1.0",
+        "nodemailer": "^1.3.4",
+        "smtpapi": "^1.1.0",
+        "sendgrid": "^1.7.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aaron7pm/aaron7pm.github.io.git"
+    },
+    "version": "3.0.0",
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x"
+    }
 }
