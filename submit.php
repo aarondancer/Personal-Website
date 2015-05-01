@@ -43,7 +43,4 @@ curl_close($session);
 
 print_r($response);
 ?>
-<h3><?php print_r($params) ?></h3>
-<h3><?php print_r($user) ?></h3>
-<h3><?php print_r($pass) ?></h3>
 <h3><?php print_r($response) ?></h3>
