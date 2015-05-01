@@ -177,6 +177,6 @@ window.addEventListener("touchstart",function(event_){
 
 function submitForm() {
 	$.ajax({type:'POST', url: 'submit.php', data:$('#contactForm').serialize(), success: function(response) {
-	    $('#contactForm').find('.formResult').html(response);
+	    $('#contactForm').find('#formResult').html(response);
 	}});
 }
