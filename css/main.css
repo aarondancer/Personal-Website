@@ -508,8 +508,8 @@ tbody {
     z-index: 999999;
 }
 
-.conForm input,
-.conForm textarea {
+.contactForm input,
+.contactForm textarea {
     border: 0.2rem solid #fff;
     background: transparent;
     margin-bottom: 1rem;
@@ -519,8 +519,8 @@ tbody {
     height: 3rem;
 }
 
-.conForm input:focus,
-.conForm textarea:focus {
+.contactForm input:focus,
+.contactForm textarea:focus {
     border: 0.2rem solid #fff;
     background: transparent;
     margin-bottom: 1rem;
@@ -529,7 +529,7 @@ tbody {
     font-size: 1.5rem;
 }
 
-.conform textarea, .conform textarea:focus {
+.contactForm textarea, .contactForm textarea:focus {
 	height: auto;
 }
 

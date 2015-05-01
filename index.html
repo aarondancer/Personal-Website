@@ -3,7 +3,7 @@
 <head>
     <title>Aaron Dancer | I &hearts; Code &amp; UI/UX</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" `tent="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="HandheldFriendly" content="True">
 </head>
@@ -364,30 +364,18 @@
                 </ul>
             </div>
         </section>
-        <form id="contactForm" class="contactForm redbg conForm" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <form id="contactForm" class="contactForm redbg" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
             <div class="row">
-                <div class="small-12 columns">
-                    <h2 id="modalTitle" class="text-center">SEND A MESSAGE</h2>
-                    <br>
-                    <input id="subject" name="subject" placeholder="Subject" type="text"></input>
-                </div>
-            </div>
-            <div id="formResult"></div>
-            <div class="row">
-                <div class="small-12 columns">
-                    <input id="name" name="name" placeholder="Name" type="text"></input>
-                </div>
-                <div class="small-12 columns">
-                    <input id="email" name="email" placeholder="Your email address" type="email"></input>
-                </div>
-                <div class="small-12 columns">
-                    <textarea cols="" id="message" name="message" placeholder="Your message" rows=""></textarea>
-                </div>
-                <div class="small-12 columns">
-                    <a class="button split no-pip goldButton" onclick="submitForm();">
-                        Send<span ><i class="fa fa-paper-plane"></i></span>
-                    </a>
-                </div>
+                <h2 id="modalTitle" class="text-center">SEND A MESSAGE</h2>
+                <br>
+                <div id="formResult"></div>
+                <input id="subject" name="subject" placeholder="Subject" type="text"></input>
+                <input id="name" name="name" placeholder="Name" type="text"></input>
+                <input id="email" name="email" placeholder="Your email address" type="email"></input>
+                <textarea cols="" id="message" name="message" placeholder="Your message" rows=""></textarea>
+                <a class="button split no-pip goldButton" onclick="submitForm();">
+                    Send<span ><i class="fa fa-paper-plane"></i></span>
+                </a>
             </div>
         </form>
         <section id="footer" class="center noSelect rs-3">
