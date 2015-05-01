@@ -1,46 +1,66 @@
 <?php
-$url = 'https://api.sendgrid.com/';
-$user = getenv('SGUSER');
-$pass = getenv('SGPASS');
-$params = array(
-	'api_user' => $user,
-	'api_key' => $pass,
-	'to' => 'me@aarondancer.com',
-	'subject' => $_POST['name'] . ": " . $_POST['subject'],
-	'html' => $_POST['message'],
-	'text' => $_POST['message'],
-	'from' => $_POST['email'],
+include_once "vendor/autoload.php";
+
+/*
+* Create the body of the message (a plain-text and an HTML version).
+* $text is your plain-text email
+* $html is your html version of the email
+* If the reciever is able to view html emails then only the html
+* email will be displayed
+*/
+$text = $_POST['message'];
+$html = $_POST['message'];
+
+// This is your From email address
+
+$from = array(
+	$_POST['email'] => $_POST['name']
 );
-$request = $url . 'api/mail.send.json';
 
-// Generate curl request
+// Email recipients
 
-$session = curl_init($request);
+$to = array(
+	'me@aarondancer.com' => 'Aaron Dancer'
 
-// Tell curl to use HTTP POST
+// Email subject
 
-curl_setopt($session, CURLOPT_POST, true);
+$subject = $_POST['subject'];
 
-// Tell curl that this is the body of the POST
+// Login credentials
 
-curl_setopt($session, CURLOPT_POSTFIELDS, $params);
+$username = getenv('SGUSER');
+$password = getenv('SGPASS');
 
-// Tell curl not to return headers, but do return the response
+// Setup Swift mailer parameters
 
-curl_setopt($session, CURLOPT_HEADER, false);
+$transport = Swift_SmtpTransport::newInstance('smtp.sendgrid.net', 587);
+$transport->setUsername($username);
+$transport->setPassword($password);
+$swift = Swift_Mailer::newInstance($transport);
 
-// Tell PHP not to use SSLv3 (instead opting for TLS)
+// Create a message (subject)
 
-curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
-curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+$message = new Swift_Message($subject);
 
-// obtain response
+// attach the body of the email
 
-$response = curl_exec($session);
-curl_close($session);
+$message->setFrom($from);
+$message->setBody($html, 'text/html');
+$message->setTo($to);
+$message->addPart($text, 'text/plain');
 
-// print everything out
+// send message
 
-print_r($response);
-?>
-<h3><?php print_r($response) ?></h3>
+if ($recipients = $swift->send($message, $failures)) {
+
+	// This will let us know how many users received this message
+
+	echo 'Message sent out to ' . $recipients . ' users';
+}
+
+// something went wrong =(
+
+else {
+	echo "Something went wrong - ";
+	print_r($failures);
+}
