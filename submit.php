@@ -56,7 +56,7 @@ if ($recipients = $swift->send($message, $failures)) {
 
 	// This will let us know how many users received this message
 
-	echo 'Message sent out to ' . $recipients . ' users';
+	echo 'Thank you for your message! I will reply ASAP.';
 }
 
 // something went wrong =(
