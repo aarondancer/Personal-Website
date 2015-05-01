@@ -508,6 +508,11 @@ tbody {
     z-index: 999999;
 }
 
+#formResult {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 .contactForm input,
 .contactForm textarea {
     border: 0.2rem solid #fff;
