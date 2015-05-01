@@ -540,6 +540,10 @@ tbody {
 	height: auto;
 }
 
+.contactForm button {
+    margin: 0;
+}
+
 ::-webkit-input-placeholder {    
     color: #fff;
 }
