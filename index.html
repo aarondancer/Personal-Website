@@ -364,7 +364,7 @@
                 </ul>
             </div>
         </section>
-        <form id="contactForm" class="contactForm redbg conForm" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog" onsubmit="submitForm();">
+        <form id="contactForm" class="contactForm redbg conForm" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
             <div class="row">
                 <div class="small-12 columns">
                     <h2 id="modalTitle" class="text-center">SEND A MESSAGE</h2>
@@ -384,9 +384,9 @@
                     <textarea cols="" id="message" name="message" placeholder="Your message" rows=""></textarea>
                 </div>
                 <div class="small-12 columns">
-                    <button type="submit" class="button split no-pip goldButton">
+                    <a class="button split no-pip goldButton" onclick="submitForm();">
                         Send<span ><i class="fa fa-paper-plane"></i></span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </form>
