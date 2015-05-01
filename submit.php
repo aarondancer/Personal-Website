@@ -21,6 +21,7 @@ $from = array(
 
 $to = array(
 	'me@aarondancer.com' => 'Aaron Dancer'
+);
 
 // Email subject
 
