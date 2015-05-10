@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<title>Accessing Environment Variables on an Azure Web App in PHP | Aaron Dancer's Blog</title>
-	<meta name="description" content="{"options"=>{}}">
+	<meta name="description" content="TLDR; If you want to access environment variables set on your Azure Web App in PHP, use getenv(). Example below:$api_key = getenv('ENVVARNAME');While working...">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 
@@ -40,7 +40,7 @@
 	<div class="branding">
 		
 		<a href="/blog/">
-			<img class="avatar" src="img/avatar.png" alt=""/>
+			<img class="avatar" src="https://secure.gravatar.com/avatar/9b57336dddf6f8310f6e3da88cc56262?s=100" alt=""/>
 		</a>
 		
 		<h1 class="site-title">
@@ -49,19 +49,24 @@
 	</div>
 	<nav class="site-nav">
 		<ul>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			<!-- Social icons from Font Awesome, if enabled -->
-			
+			<li>
+				<a class="page-link" href="http://aarondancer.com">
+					My Portfolio
+				</a>
+			</li>
+			<li class="social-icons">
+				<ul>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					
 <li>
 	<a href="http://aarondancer.com/blog/feed.xml" title="Follow RSS feed">
 		<i class="fa fa-fw fa-rss"></i>
@@ -137,6 +142,8 @@
 
 
 
+				</ul>
+			</li>
 		</ul>
 	</nav>
 </header>
@@ -147,7 +154,7 @@
     <h1 class="title">Accessing Environment Variables on an Azure Web App in PHP</h1>
     <p class="meta">
     April 30, 2015
-     - {"login"=>"aaron7pm", "email"=>"aaron7pm@gmail.com", "display_name"=>"aaron7pm", "first_name"=>"Aaron", "last_name"=>"Dancer"}
+    
     </p>
   </header>
   <section class="post-content"><p><strong>TLDR;</strong> If you want to access environment variables set on your Azure Web App in PHP, use <code>getenv()</code>. Example below:</p>
@@ -155,7 +162,7 @@
 <hr />
 <p>While working on the contact form for my <a href="http://aarondancer.com" target="_blank">personal website</a>, I ran into issues with accessing environment variables I had set in my Azure Web App.</p>
 <p>When building my contact form I decided to use SendGrid to power it (which I purchased from the Azure Marketplace). In order to use the SendGrid API I needed to include the API keys and login credentials. It's very bad practice to include these keys in your source code (especially when open source like my website), so I added some environment variables in the configuration section of my Azure Web App.</p>
-<p><img class="" src="img/R3fCoig.png" alt="Azure Web App Environment Variable Configuration" width="779" height="187" /></p>
+<p><img class="" src="http://i.imgur.com/R3fCoig.png" alt="Azure Web App Environment Variable Configuration" width="100%" /></p>
 <p>Since these variables are set for the whole app, I figured they were global. So I tried accessing them like so: <code>$_ENV["SGUSER"]</code>. However, after much testing I found that accessing them with <code>$_ENV</code> would yield nothing. I tested with <code>$_SERVER</code> as well with the same result. So, after a bit of searching on Bing I found the <a href="http://php.net/manual/en/function.getenv.php"><code>getenv()</code></a> function. This seemed to do the trick!</p>
 </section>
 </article>
@@ -168,7 +175,7 @@
 
 
 <footer class="site-footer">
-	<p class="text">Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+	<p class="text">Powered by <a href="http://jekyllrb.com">Jekyll</a>. Theme based on <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>.<br>Copyright &copy; 2015 Aaron Dancer.
 </p>
 </footer>
 

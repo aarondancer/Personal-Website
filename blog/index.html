@@ -41,7 +41,7 @@
 	<div class="branding">
 		
 		<a href="/blog/">
-			<img class="avatar" src="img/avatar.png" alt=""/>
+			<img class="avatar" src="https://secure.gravatar.com/avatar/9b57336dddf6f8310f6e3da88cc56262?s=100" alt=""/>
 		</a>
 		
 		<h1 class="site-title">
@@ -50,19 +50,24 @@
 	</div>
 	<nav class="site-nav">
 		<ul>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			<!-- Social icons from Font Awesome, if enabled -->
-			
+			<li>
+				<a class="page-link" href="http://aarondancer.com">
+					My Portfolio
+				</a>
+			</li>
+			<li class="social-icons">
+				<ul>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<!-- Social icons from Font Awesome, if enabled -->
+					
 <li>
 	<a href="http://aarondancer.com/blog/feed.xml" title="Follow RSS feed">
 		<i class="fa fa-fw fa-rss"></i>
@@ -138,6 +143,8 @@
 
 
 
+				</ul>
+			</li>
 		</ul>
 	</nav>
 </header>
@@ -147,8 +154,7 @@
   
   <div class="call-out" 
   style="background-image: url('/blog/')">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+    <h2>I &hearts; Code & UI/UX</h2> <p>Software engineer, UX Researcher, and Event Organizer. My posts are mainly programming and UX related; with the occasional post about events, life, business, and community.</p>
 
   </div>
   
@@ -167,107 +173,24 @@
         </p>
       </header>
       <div class="excerpt">
-        {"options"=>{}}
+        <p><strong>TLDR;</strong> If you want to access environment variables set on your Azure Web App in PHP, use <code>getenv()</code>. Example below:</p>
+<p><code>$api_key = getenv('ENVVARNAME');</code></p>
+<hr />
+<p>While working on the contact form for my <a href="http://aarondancer.com" target="_blank">personal website</a>, I ran into issues with accessing environment variables I had set in my Azure Web App.</p>
+<p>When building my contact form I decided to use SendGrid to power it (which I purchased from the Azure Marketplace). In order to use the SendGrid API I needed to include the API keys and login credentials. It's very bad practice to include these keys in your source code (especially when open source like my website), so I added some environment variables in the configuration section of my Azure Web App.</p>
+<p><img class="" src="http://i.imgur.com/R3fCoig.png" alt="Azure Web App Environment Variable Configuration" width="100%" /></p>
+<p>Since these variables are set for the whole app, I figured they were global. So I tried accessing them like so: <code>$_ENV["SGUSER"]</code>. However, after much testing I found that accessing them with <code>$_ENV</code> would yield nothing. I tested with <code>$_SERVER</code> as well with the same result. So, after a bit of searching on Bing I found the <a href="http://php.net/manual/en/function.getenv.php"><code>getenv()</code></a> function. This seemed to do the trick!</p>
+
+
+
         <a class="button" href="/blog/aarondancer.com/azure/php/2015/04/30/accessing-environment-variables-on-an-azure-web-app-in-php.html">
           Continue reading
         </a>
       </div>
     </div>
     
-    <div class="post-teaser">
-      <header>
-        <h1>
-          <a class="post-link" href="/blog/2014/11/30/sample-post.html">
-            Sample post
-          </a>
-        </h1>
-        <p class="meta">
-          November 30, 2014
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.</p>
-
-
-        <a class="button" href="/blog/2014/11/30/sample-post.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h1>
-          <a class="post-link" href="/blog/2014/11/29/feature-images.html">
-            Feature images
-          </a>
-        </h1>
-        <p class="meta">
-          November 29, 2014
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.</p>
-
-
-        <a class="button" href="/blog/2014/11/29/feature-images.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h1>
-          <a class="post-link" href="/blog/2014/11/28/markdown-and-html.html">
-            Markdown and HTML
-          </a>
-        </h1>
-        <p class="meta">
-          November 28, 2014
-        </p>
-      </header>
-      <div class="excerpt">
-        <p>Jeykll supports the use of <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.</p>
-
-
-        <a class="button" href="/blog/2014/11/28/markdown-and-html.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h1>
-          <a class="post-link" href="/blog/codeday/hackathons/2014/11/05/how-to-be-ready-for-codeday-houston-fall-2014.html">
-            How to be ready for CodeDay Houston Fall 2014
-          </a>
-        </h1>
-        <p class="meta">
-          November 5, 2014
-        </p>
-      </header>
-      <div class="excerpt">
-        {"options"=>{}}
-        <a class="button" href="/blog/codeday/hackathons/2014/11/05/how-to-be-ready-for-codeday-houston-fall-2014.html">
-          Continue reading
-        </a>
-      </div>
-    </div>
-    
   </div>
 
-  
-  <div class="pagination">
-    
-    
-    <a href="/blog/blog/page2" class="button" >
-      Next
-      <i class="fa fa-chevron-right"></i>
-    </a>
-    
-  </div>
   
 </div>
 
@@ -276,7 +199,7 @@
 
 
 <footer class="site-footer">
-	<p class="text">Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+	<p class="text">Powered by <a href="http://jekyllrb.com">Jekyll</a>. Theme based on <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>.<br>Copyright &copy; 2015 Aaron Dancer.
 </p>
 </footer>
 

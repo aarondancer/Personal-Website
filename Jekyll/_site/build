@@ -1,7 +1,0 @@
-echo "$(tput setaf 6)Deleting old blog contents...$(tput sgr0)"
-rm -rf ../blog
-echo "$(tput setaf 6)Regenerating Jekyll Blog...$(tput setaf 3)"
-jekyll build
-echo "$(tput setaf 6)Moving and Renaming Jekyll Blog to root...$(tput sgr0)"
-mv ./_site ../blog
-echo "$(tput setaf 2)Jekyll blog has been generated and is availble in /blog$(tput sgr0)"
