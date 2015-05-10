@@ -24,6 +24,10 @@
     font-weight: bold;
     font-size: 1em;
     line-height: 1.5;
+
+    a {
+      color: $red;
+    }
   }
 
   .site-nav {
@@ -39,6 +43,10 @@
       display: inline;
       float: left;
       margin-right: 0.4em;
+    }
+    .social-icons, .social-icons ul {
+      padding: 0;
+      margin: 0;
     }
     @media (max-width: 1100px) {
       ul {

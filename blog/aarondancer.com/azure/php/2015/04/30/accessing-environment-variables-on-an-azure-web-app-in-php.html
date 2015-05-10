@@ -2,9 +2,8 @@
 <html class="no-js">
   <head>
 	<meta charset="utf-8">
-	<title>Page not found | Aaron Dancer's Blog</title>
-	<meta name="description" content="Official blog of Aaron Dancer. Software engineer, UX Researcher, and Event Organizer. Mainly programming and UX related blog posts, with some posting about events, life events, company, and community. 
-">
+	<title>Accessing Environment Variables on an Azure Web App in PHP | Aaron Dancer's Blog</title>
+	<meta name="description" content="{"options"=>{}}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 
@@ -15,7 +14,7 @@
 	<link rel="shortcut icon" href="/blog/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="http://aarondancer.com/blog/404.html">
+	<link rel="canonical" href="http://aarondancer.com/blog/aarondancer.com/azure/php/2015/04/30/accessing-environment-variables-on-an-azure-web-app-in-php.html">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="Aaron Dancer's Blog" href="http://aarondancer.com/blog/feed.xml" />
@@ -145,11 +144,24 @@
     <div class="content">
       <article >
   <header style="background-image: url('/blog/')">
-    <h1 class="title">Page not found</h1>
+    <h1 class="title">Accessing Environment Variables on an Azure Web App in PHP</h1>
+    <p class="meta">
+    April 30, 2015
+     - {"login"=>"aaron7pm", "email"=>"aaron7pm@gmail.com", "display_name"=>"aaron7pm", "first_name"=>"Aaron", "last_name"=>"Dancer"}
+    </p>
   </header>
-  <section class="post-content"><p>Sorry, the requested page wasn’t found on the server.</p>
+  <section class="post-content"><p><strong>TLDR;</strong> If you want to access environment variables set on your Azure Web App in PHP, use <code>getenv()</code>. Example below:</p>
+<p><code>$api_key = getenv('ENVVARNAME');</code></p>
+<hr />
+<p>While working on the contact form for my <a href="http://aarondancer.com" target="_blank">personal website</a>, I ran into issues with accessing environment variables I had set in my Azure Web App.</p>
+<p>When building my contact form I decided to use SendGrid to power it (which I purchased from the Azure Marketplace). In order to use the SendGrid API I needed to include the API keys and login credentials. It's very bad practice to include these keys in your source code (especially when open source like my website), so I added some environment variables in the configuration section of my Azure Web App.</p>
+<p><img class="" src="img/R3fCoig.png" alt="Azure Web App Environment Variable Configuration" width="779" height="187" /></p>
+<p>Since these variables are set for the whole app, I figured they were global. So I tried accessing them like so: <code>$_ENV["SGUSER"]</code>. However, after much testing I found that accessing them with <code>$_ENV</code> would yield nothing. I tested with <code>$_SERVER</code> as well with the same result. So, after a bit of searching on Bing I found the <a href="http://php.net/manual/en/function.getenv.php"><code>getenv()</code></a> function. This seemed to do the trick!</p>
 </section>
 </article>
+
+<!-- Disqus -->
+
 
     </div>
     <script src="/blog/js/main.js"></script>

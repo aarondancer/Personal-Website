@@ -7,19 +7,18 @@ theme:
   # Meta
   title: Aaron Dancer's Blog
   avatar: avatar.png
-  gravatar: # Email MD5 hash
+  gravatar: 9b57336dddf6f8310f6e3da88cc56262
   description: > # this means to ignore newlines until "header_text:"
     Official blog of Aaron Dancer. Software engineer, UX Researcher, and Event Organizer.
     Mainly programming and UX related blog posts, with some posting about events,
     life events, company, and community. 
 
   header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+     <h2>I &hearts; Code & UI/UX</h2>
+     <p>Software engineer, UX Researcher, and Event Organizer. My posts are mainly programming and UX related; with the occasional post about events, life, business, and community.</p>
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+   Powered by <a href="http://jekyllrb.com">Jekyll</a>. Theme based on <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>.<br>Copyright &copy; 2015 Aaron Dancer.
 
   # Icons
   rss: true
