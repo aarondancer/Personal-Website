@@ -6,12 +6,12 @@
     <link>http://aarondancer.com/blog/</link>
     <description>Official blog of Aaron Dancer. Software engineer, UX Researcher, and Event Organizer. Mainly programming and UX related blog posts, with some posting about events, life events, company, and community. 
 </description>
-    <pubDate>Sun, 10 May 2015 17:05:46 -0500</pubDate>
+    <pubDate>Sun, 10 May 2015 17:08:23 -0500</pubDate>
     
       <item>
         <title>Accessing Environment Variables on an Azure Web App in PHP</title>
-        <link>http://aarondancer.com/blog/aarondancer.com/azure/php/2015/04/30/accessing-environment-variables-on-an-azure-web-app-in-php.html</link>
-        <guid isPermaLink="true">http://aarondancer.com/blog/aarondancer.com/azure/php/2015/04/30/accessing-environment-variables-on-an-azure-web-app-in-php.html</guid>
+        <link>http://aarondancer.com/blog/2015/04/30/accessing-environment-variables-on-an-azure-web-app-in-php.html</link>
+        <guid isPermaLink="true">http://aarondancer.com/blog/2015/04/30/accessing-environment-variables-on-an-azure-web-app-in-php.html</guid>
         <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; If you want to access environment variables set on your Azure Web App in PHP, use &lt;code&gt;getenv()&lt;/code&gt;. Example below:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$api_key = getenv(&#39;ENVVARNAME&#39;);&lt;/code&gt;&lt;/p&gt;
 &lt;hr /&gt;
