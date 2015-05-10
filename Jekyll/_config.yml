@@ -1,14 +1,71 @@
-# Site settings
-title: Aaron Dancer's Blog
-email: me@aarondancer.com
-description: > # this means to ignore newlines until "baseurl:"
-  Official blog of Aaron Dancer. Software engineer, UX Researcher, and Event Organizer.
-  Mainly programming and UX related blog posts, with some posting about events,
-  life events, company, and community. 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://aarondancer.com/blog" # the base hostname & protocol for your site
-twitter_username: aaron7pm
-github_username:  aaron7pm
+# SITE CONFIGURATION
+baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+url: "http://aarondancer.com" # the base hostname & protocol for your site
 
-# Build settings
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: Aaron Dancer's Blog
+  avatar: avatar.png
+  gravatar: # Email MD5 hash
+  description: > # this means to ignore newlines until "header_text:"
+    Official blog of Aaron Dancer. Software engineer, UX Researcher, and Event Organizer.
+    Mainly programming and UX related blog posts, with some posting about events,
+    life events, company, and community. 
+
+  header_text: >
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+  header_text_feature_image:
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+
+  # Icons
+  rss: true
+  email_address: "me@aarondancer.com" # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook: "aaron7pm"
+  flickr:
+  github: "aaron7pm"
+  google_plus:
+  instagram:
+  linkedin: "http://linkedin.com/in/aarondancer" # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: "aaron7pm"
+  wordpress:
+  youtube:
+
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
 markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: :compressed
