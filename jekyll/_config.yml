@@ -1,0 +1,14 @@
+# Site settings
+title: Aaron Dancer's Blog
+email: me@aarondancer.com
+description: > # this means to ignore newlines until "baseurl:"
+  Official blog of Aaron Dancer. Software engineer, UX Researcher, and Event Organizer.
+  Mainly programming and UX related blog posts, with some posting about events,
+  life events, company, and community. 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://aarondancer.com/blog" # the base hostname & protocol for your site
+twitter_username: aaron7pm
+github_username:  aaron7pm
+
+# Build settings
+markdown: kramdown
