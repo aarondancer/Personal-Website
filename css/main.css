@@ -10,6 +10,10 @@
 	letter-spacing: 0.05rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
 .btn-grey {
 	border: 0.2rem solid #333;
 	border-radius: 0.2rem;
@@ -37,6 +41,14 @@
 .btn-white:active {
 	color: #333;
 	background: #fff;
+}
+
+.spacer {
+	background: #ee5454;
+	height: 0.4rem;
+	margin: auto;
+	margin-top: 4rem;
+	width: 20rem;
 }
 
 .navbar {
@@ -148,19 +160,21 @@
     margin-right: 1rem;
 }
 
-.about {
-	padding-top: 3rem;
+.about,
+.experience {
+	padding-top: 1rem;
 }
 
-.about .headline,
-.experience .headline {
+.headline {
 	font-size: 4.8rem;
 	font-weight: 100;
 	padding: 3rem;
+	text-align: center;
 }
 
 .about p,
-.experience p {
+.experience p,
+.portfolio p {
 	color: #888;
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -174,4 +188,19 @@
 .experience {
 	background: #ee5454;
 	color: #fff;
+}
+
+.experience .spacer {
+	background: #fff;
+	margin-top: 4rem;
+	width: 20rem;
+}
+
+.contact {
+	background: #333;
+	color: #fff;
+}
+
+.contact .spacer {
+	background: #fff;
 }
