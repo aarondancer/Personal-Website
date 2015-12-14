@@ -1,0 +1,29 @@
+{
+  "name": "personal-website",
+  "version": "5.0.0",
+  "description": "Personal Website of Aaron Dancer",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaron7pm/Personal-Website.git"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "portfolio"
+  ],
+  "author": "Aaron Dancer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaron7pm/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/aaron7pm/Personal-Website#readme"
+}
