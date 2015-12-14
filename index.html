@@ -7,41 +7,72 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Aaron Dancer | Software Engineer, Designer, Organizer, &amp; Evangelist</title>
 	<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,600,700,900' rel='stylesheet' type='text/css'>
+	<link href="./css/main.css" rel="stylesheet">
 </head>
 
 <body>
-	
-	<div class="nav-container">
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Aaron Dancer</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="main-menu">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Aaron Dancer</a>
 			</div>
-			<!-- /.container-fluid -->
-		</nav>
-	</div>
-
-	<div class="main-container">
-		<header class="main-header">
+			<div class="collapse navbar-collapse" id="main-menu">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="main">
+		<header class="header">
 			<div class="background-image"></div>
+			<div class="background-overlay"></div>
+			<div class="content container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 col-md-6">
+						<h2 class="hello">Hello, my name is…</h2>
+						<h1 class="name">Aaron Dancer</h1>
+						<h2 class="titles">I am a Software Engineer, Designer, Organizer, &amp; Evangelist</h2>
+						<div class="separator">
+								<a href="#" class="btn btn-white">RESUME</a>
+								<a href="#" class="btn btn-white">CONTACT ME</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
-	</div>
+	</section>
+	<section class="about">
+		<div class="container">
+			<h1 class="headline text-center">Build, Design, Code, &amp; Share</h1>
+			<p>
+				I'm a self-taught software engineer and designer currently majoring in Computer Science Business at the University of Houston, revolutionizing the home selling process at <a href="http://fwizbo.com">Fwizbo</a>, and helping to build a safer internet at <a href="https://www.ssl.com">SSL.com</a>. 
+			</p>
+			<p>
+				I began at the age of 8 with teaching myself C++, HTML, and CSS developing basic websites and applications. Code became my medium for expressing my passion for building solutions and experiences. Now, I've expanded my skillsets to include full-stack web development using various languages and frameworks, iOS, Android, and .NET applications.
+			</p>
+			<p>
+				I also help lead the young-tech scene in Houston by organizing and mentoring various hackathons, events, &amp; workshops. I'm the Director of <a href="https://uhcode.red">CodeRED</a>, Houston's largest hackathon.
+			</p>
+			<img class="desk" src="./images/desk.svg"/>
+		</div>
 
+	</section>
+	<section class="experience">
+		<div class="container">
+			<h1 class="headline text-center">Experience</h1>
+		</div>
+	</section>
 	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
