@@ -137,6 +137,7 @@ p {
 
 .header {
     padding: 16rem 0;
+    padding-bottom: 36rem;
     position: relative;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -188,9 +189,18 @@ p {
     margin-right: 1rem;
 }
 
-.about,
-.engineer {
-	padding-top: 1rem;
+.about {
+	margin-top: -20rem;
+	padding-top: 6rem;
+	-webkit-transform: skew(0deg, -5deg);
+	transform: skew(0deg, -5deg);
+	background: #fff;
+}
+
+.about .container {
+	-webkit-transform: skew(0deg, 5deg);
+	transform: skew(0deg, 5deg);
+	text-align: center;
 }
 
 .about p {
@@ -202,6 +212,10 @@ p {
 	margin-top: 3rem;
 	max-width: 900px;
 	pointer-events: none;
+}
+
+.engineer {
+	padding-top: 1rem;
 }
 
 .engineer {
