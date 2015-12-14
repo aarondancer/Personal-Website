@@ -14,6 +14,22 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 100;
 }
 
+p {
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 3rem;
+}
+
+.noselect {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .btn-grey {
 	border: 0.2rem solid #333;
 	border-radius: 0.2rem;
@@ -47,8 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 	background: #ee5454;
 	height: 0.4rem;
 	margin: auto;
-	margin-top: 4rem;
+	margin-bottom: 3.5rem;
 	width: 20rem;
+}
+
+.container {
+	z-index: 1;
 }
 
 .navbar {
@@ -90,43 +110,51 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
 }
 
-.header {
-    padding: 12rem 0;
-    position: relative;
+.headline {
+	font-size: 4.8rem;
+	font-weight: 100;
+	max-width: 640px;
+	margin: auto;
+	padding: 3rem 0;
+	text-align: center;
 }
 
-.header .background-image {
-    background-color: transparent;
-    background-image: url(../images/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.headline > p {
+	font-size: 2.4rem;
+	font-weight: 100;
+}
+
+.background-overlay {
     position: absolute;
+    pointer-events: none;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.header {
+    padding: 16rem 0;
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/bg1.jpg);
+    background-attachment: fixed;
 }
 
 .header .background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: #494c43;
     background: -moz-linear-gradient(45deg,  #494c43 0%, #ee5454 100%);
     background: -webkit-linear-gradient(45deg,  #494c43 0%,#ee5454 100%);
     background: linear-gradient(45deg,  #494c43 0%,#ee5454 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494c43', endColorstr='#ee5454',GradientType=1 );
-
-    opacity: 0.75;
-    z-index: -1;
 }
 
 .header .content {
 	color: #fff !important;
-	z-index: 1;
 }
 
 .header .content .hello {
@@ -161,39 +189,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about,
-.experience {
+.engineer {
 	padding-top: 1rem;
 }
 
-.headline {
-	font-size: 4.8rem;
-	font-weight: 100;
-	padding: 3rem;
-	text-align: center;
-}
-
-.about p,
-.experience p,
-.portfolio p {
-	color: #888;
-	font-size: 1.6rem;
-	font-weight: 300;
-	line-height: 3rem;
+.about p {
+	color: #666;
 }
 
 .about .desk {
+	margin: auto;
 	margin-top: 3rem;
+	max-width: 900px;
+	pointer-events: none;
+}
+
+.engineer {
+	position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/bg3.jpg);
+    background-attachment: fixed;
+	color: #fff;
+	padding-bottom: 4rem;
+}
+
+.engineer .background-overlay {
+    background: #494c43;
+    background: -moz-linear-gradient(top,  #494c43 0%, #d84e4e 100%);
+    background: -webkit-linear-gradient(top,  #494c43 0%,#d84e4e 100%);
+    background: linear-gradient(to bottom,  #494c43 0%,#d84e4e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494c43', endColorstr='#d84e4e',GradientType=0 );
+}
+
+.engineer .spacer {
+	background: #fff;
+}
+
+.engineer h3 {
+	border-bottom: 0.2rem solid #fff;
+	font-size: 2.8rem;
+	padding-bottom: 1rem;
+}
+
+.engineer li {
+	font-size: 2rem;
+	font-weight: 100;
+	margin: 2rem 1rem;
 }
 
 .experience {
-	background: #ee5454;
-	color: #fff;
-}
-
-.experience .spacer {
-	background: #fff;
-	margin-top: 4rem;
-	width: 20rem;
+	background: #eee;
 }
 
 .contact {
